@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于</title>
+    <link rel="icon" href="/static/images/titleLogo.png" th:href="@{images/titleLogo.png}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment nav-size nav-shadow">
+        <div class="ui container">
+            <div class="ui inverted secondary pointing stackable menu">
+
+                <!--/*/<th:block th:insert="_fragments :: menu(4)">/*/-->
+                <!--/*/</th:block>/*/-->
+
+            </div>
+        </div>
+        <a href="#" class="ui black icon button top-right mobile-show" id="menu-toggle">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!-- 中间内容 -->
+    <div id="basic-waypoint">
+        <div class="ui container content-padding text-spacing about-web animate__animated animate__bounceInUp">
+            <!-- 界面图 -->
+            <div class="ui top attached segment">
+                <div class="about-image">
+                    <div class="about-img-msg text-spacing">一个默默无闻的后端小白·Meiko
+                        <br> <span>wait for 朱旖旎</span> </div>
+                    <img src="../static/images/alone.png" th:src="@{images/alone.png}" alt="" class="ui medium rounded image about-img">
+                    <!-- <img src="./static/images/alone.png" alt="" style="width: 100%; opacity: 0.5;" class="ui medium rounded image"> -->
+                </div>
+            </div>
+            <!-- 关于我 -->
+            <div class="ui attached segment">
+                <h2 class="ui header"><span>丨</span>关于我</h2>
+                <div class="ui basic segment">
+                    <p> <span class="ui tiny header">就读学校:</span> 五邑大学，智能制造学部，网络工程专业</p>
+                    <p> <span class="ui tiny header">擅长技术:</span>
+                        <p>掌握 JAVA SE，JAVA WEB 开发技能，熟练 SSM 框架，掌握 SpringBoot，mybatis 的使用；</p>
+                        <p>掌握MySQL数据库；</p>
+                        <p>熟练jQuery、AJAX、Javascript、 Html5、CSS3等前端页面技术；</p>
+                        <p>掌握Linux等系统基本命令操作。</p>
+                    </p>
+                    <p> <span class="ui tiny header">个人简介:</span> 一个99年出生的技术薄弱的开发小白，目前是还没毕业的一名大四狗，迷茫的到处寻找自己的容身之处。</p>
+                </div>
+            </div>
+            <!-- 关于本站 -->
+            <div class="ui attached segment">
+                <h2 class="ui header"><span>丨</span>关于本站</h2>
+                <div class="ui basic segment">
+                    <p> <span class="ui tiny header">本站简介:</span> 本站建于2020年1月，主要是用于记录个人学习经验与发展历程。</p>
+                    <p> <span class="ui tiny header">本站前端:</span> 采用<i class="ui label">semantic-ui</i>框架 </p>
+                    <p> <span class="ui tiny header">本站后端:</span> 采用<i class="ui label">springboot &nbsp; hibernate</i>框架 </p>
+                    <p> <span class="ui tiny header">本站源代码地址:</span> <a href="#">http://google.com</a></p>
+                </div>
+            </div>
+            <!-- 特别说明 -->
+            <div class="ui attached segment">
+                <h2 class="ui header"><span>丨</span>特别说明</h2>
+                <div class="ui basic segment">
+                    <p> 本站文章仅代表个人观点，和任何组织或个人无关。</p>
+                    <p> 本站前端开发代码没有考虑对IE浏览器的兼容。</p>
+                    <p> 用户邮箱仅作回复消息用，不对外使用。</p>
+                </div>
+            </div>
+            <!-- 尾部图 -->
+            <div class="ui bottom attached segment">
+                <img src="../static/images/code.png" th:src="@{images/code.png}" alt="" class="ui medium rounded image" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- 工具条 -->
+    <div class="tools menu">
+        <div class="ui vertical icon buttons">
+            <a href="#" class="ui teal button goTop">
+                <img class="rocket" src="../static/images/icon_rocket.png" th:src="@{images/icon_rocket.png}" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!--/*/<th:block th:insert="_fragments :: footer">/*/-->
+    <!--/*/</th:block>/*/-->
+
+    <!--/*/<th:block th:insert="_fragments :: link">/*/-->
+    <!--/*/</th:block>/*/-->
+
+    <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript" src="../static/js/me.js" th:src="@{js/me.js}"></script>
+
+
+</body>
+
+</html>

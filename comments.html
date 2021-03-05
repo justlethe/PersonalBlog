@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言区</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment nav-size nav-shadow">
+        <div class="ui container">
+            <div class="ui inverted secondary pointing stackable menu">
+                <img src="./static/images/logo.png" alt="" class="item logo">
+                <a href="http://127.0.0.1:5500/front/index.html" class="item menu-item mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="http://127.0.0.1:5500/front/blog.html" class="item menu-item mobile-hide"><i class="file alternate icon"></i>博客</a>
+                <a href="http://127.0.0.1:5500/front/comments.html" class="item menu-item mobile-hide"><i class="comment alternate icon"></i>留言</a>
+                <a href="http://127.0.0.1:5500/front/about.html" class="item menu-item mobile-hide active"><i class="info icon"></i>关于</a>
+                <div class="right item menu-item mobile-hide">
+                    <div class="ui inverted icon input">
+                        <input type="text" placeholder="输入以搜索...">
+                        <i class="circular search link icon"></i>
+                    </div>
+                </div>
+                <!-- 登录前的头像信息 -->
+                <!-- <a href="#" class="item login"><i class="large user circle icon"></i>登录</a> -->
+                <!-- 登录后的头像 -->
+                <a href="#" class="item login after" data-position="bottom center"><img src="https://picsum.photos/id/1/50" alt="" class="ui circular image"></a>
+                <div class="ui popup">
+                    <div class="ui middle aligned list">
+                        <!-- 管理员功能 -->
+                        <!-- <div class="item">
+                            <a class="ui teal admin button">
+                                管理博客
+                            </a>
+                        </div> -->
+                        <!-- 普通功能 -->
+                        <div class="item">
+                            <a class="ui teal data button">
+                                个人资料
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="ui teal logout button">
+                                退出登录
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui black icon button top-right mobile-show" id="menu-toggle">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!-- 中间内容 -->
+    <div style="background-image: url(./static/images/darkness.png); height: 1000px;">
+        <div class="ui container content-padding">
+            <!-- 留言发表区 -->
+            <div class="ui segment">
+                <!-- 留言头 -->
+                <div class="ui vertical center aligned segment divid-segment">
+                    <h1 class="comment-header">留&nbsp;言&nbsp;板</h1>
+                    <h3 class="comment-header text-spacing">用心交流&nbsp;♥&nbsp;心就近了</h3>
+                </div>
+                <!-- 留言编辑 -->
+                <div class="ui vertical segment">
+                    <form class="ui reply form">
+                        <div class="field">
+                            <textarea name="content"></textarea>
+                        </div>
+                        <div class="ui blue labeled submit icon button"><i class="icon edit"></i> 提交留言 </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 留言列表区 -->
+            <div class="ui segment">
+                <div class="ui threaded comments">
+                    <h3 class="ui dividing header">Comments</h3>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="/images/avatar/small/matt.jpg">
+                        </a>
+                        <div class="content">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                                <span class="date">今天下午 5:42</span>
+                            </div>
+                            <div class="text">太赞了！ </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="/images/avatar/small/elliot.jpg">
+                        </a>
+                        <div class="content">
+                            <a class="author">Elliot Fu</a>
+                            <div class="metadata">
+                                <span class="date">昨天上午12:30</span>
+                            </div>
+                            <div class="text">
+                                <p>這對我的研究是非常有用.謝謝!</p>
+                            </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="/images/avatar/small/jenny.jpg">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Jenny Hess</a>
+                                    <div class="metadata">
+                                        <span class="date">刚刚</span>
+                                    </div>
+                                    <div class="text">艾略特你永远是多么正确 :) </div>
+                                    <div class="actions">
+                                        <a class="reply">回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <a class="avatar">
+                            <img src="/images/avatar/small/joe.jpg">
+                        </a>
+                        <div class="content">
+                            <a class="author">Joe Henderson</a>
+                            <div class="metadata">
+                                <span class="date">5 天以前</span>
+                            </div>
+                            <div class="text">老兄，这太棒了。非常感谢。 </div>
+                            <div class="actions">
+                                <a class="reply">回复</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- 底部信息 -->
+    <footer class="ui inverted segment" style="margin: 0px;">
+        <div class="ui container">
+            <div class="ui inverted divided stackable grid">
+                <div class="six wide column center aligned">
+                    <br>
+                    <h4>Meiko</h4>
+                    <p>如果手上没有剑，我就不能保护你</p>
+                    <p>如果一直握着剑，我就无法抱紧你</p>
+                </div>
+                <div class="five wide column center aligned">
+                    <h4>相关连接</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item"><i class="file alternate icon"></i>&nbsp&nbsp&nbsp博文</a>
+                        <a href="#" class="item"><i class="comment alternate icon"></i>&nbsp&nbsp&nbsp留言</a>
+                        <a href="#" class="item"><i class="file alternate outline icon"></i>&nbsp&nbsp&nbsp归档</a>
+                        <a href="#" class="item"><i class="info icon"></i>&nbsp&nbsp&nbsp关于</a>
+                    </div>
+                </div>
+                <div class="five wide column about">
+                    <h4 style="text-align: center;">联系我</h4>
+                    <p class="item"><i class="qq icon"></i>&nbsp&nbsp&nbspQQ: 1056427550</p>
+                    <p class="item"><i class="envelope icon"></i>&nbsp&nbsp&nbsp邮箱: 1056427550@qq.com</p>
+                    <p class="item"><i class="wechat icon"></i>&nbsp&nbsp&nbspwechat: 15768427201</p>
+                    <p class="item"><i class="github icon"></i>&nbsp&nbsp&nbspgithub: justlethe</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p style="text-align: center;">Copyright © 2020-2021 Meiko 丨 All Rights Reserved V.1.0.0</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="./static/css/me.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+
+    <script>
+        $('#menu-toggle').click(function() {
+            $('.menu-item').toggleClass('mobile-hide');
+        });
+        $('.item.login')
+            .popup({
+                popup: $('.custom.popup'),
+                on: 'click'
+            });
+        $webfont.load(".comment-header", "67320fc4c19d416ca08efd68d279196a", "NaiYou");
+        /*$webfont.load("#id1,.class1,h1", "67320fc4c19d416ca08efd68d279196a", "NaiYou");*/
+        /*．．．*/
+        $webfont.draw();
+    </script>
+</body>
+
+</html>

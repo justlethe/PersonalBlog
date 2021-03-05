@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客发布</title>
+    <link rel="icon" href="/static/images/titleLogo.png" th:href="@{images/titleLogo.png}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="/static/layui/css/layui.css" th:href="@{layui/css/layui.css}" media="all">
+    <link rel="stylesheet" href="../static/lib/editormd/css/editormd.min.css"
+        th:href="@{lib/editormd/css/editormd.min.css}">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment nav-size nav-shadow">
+        <div class="ui container">
+            <div class="ui inverted secondary pointing stackable menu">
+
+                <!--/*/<th:block th:insert="_fragments :: menu(5)">/*/-->
+                <!--/*/</th:block>/*/-->
+
+            </div>
+        </div>
+        <a href="#" class="ui black icon button top-right mobile-show" id="menu-toggle">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+
+    <!-- 中间内容 -->
+    <div id="basic-waypoint">
+        <div class="ui container content-padding text-spacing">
+            <form action="#" method="POST" class="layui-form layui-form-pane" lay-filter="blog">
+                <!-- 博客标题、类别、描述、首页图 -->
+                <div class="layui-row">
+                    <!-- 左侧部分 -->
+                    <div class="layui-col-xs5">
+                        <!-- 文章声明与推荐 -->
+                        <div class="layui-form-item">
+                            <div class="layui-col-xs5">
+                                <label class="layui-form-label">转载声明</label>
+                                <div class="layui-input-block">
+                                    <select name="type" lay-filter="type">
+                                        <option value="原创">原创</option>
+                                        <option value="转载">转载</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="layui-col-xs6" style="float: right;">
+                                <label class="layui-form-label">是否推荐</label>
+                                <div class="layui-input-block">
+                                    <select name="recommend" lay-filter="recommend">
+                                        <option value="1">是</option>
+                                        <option value="0">否</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 文章类别 -->
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">文章类别</label>
+                            <div class="layui-input-block" id="category_list">
+                                <!--                                    <select id="category_list" name="category" lay-filter="category">-->
+                                <!--                                    </select>-->
+                            </div>
+                        </div>
+                        <!-- 文章标题 -->
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">文章标题</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+                                    autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <!-- 文章描述 -->
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">文章描述</label>
+                            <div class="layui-input-block">
+                                <textarea name="description" placeholder="请输入内容" rows="7"
+                                    class="layui-textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧部分，首页图 -->
+                    <div class="layui-col-xs7" style="text-align: right;">
+                        <img src="https://picsum.photos/id/1/600/350" alt="">
+                    </div>
+                </div>
+
+                <!-- 博客正文 -->
+                <div id="md-content" style="z-index: 99 !important;">
+                    <textarea name="content" placeholder="请输入内容" cols="30" rows="10" style="display: none;"></textarea>
+                </div>
+
+                <!-- 功能按钮 -->
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button type="button" class="layui-btn "
+                            onclick="window.history.go(-1)">返回</button>
+                        <button class="layui-btn layui-btn-normal" lay-submit lay-filter="save">保存</button>
+                        <button class="layui-btn" lay-submit lay-filter="publish">发布</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--/*/<th:block th:insert="_fragments :: footer">/*/-->
+    <!--/*/</th:block>/*/-->
+
+    <!--/*/<th:block th:insert="_fragments :: link">/*/-->
+    <!--/*/</th:block>/*/-->
+
+
+    <script src="/static/layui/layui.js" th:src="@{layui/layui.js}" charset="utf-8"></script>
+    <script src="/static/js/xm-select.js" th:src="@{js/xm-select.js}"></script>
+    <script src="../static/js/me.js" th:src="@{js/me.js}"></script>
+    <script src="../static/lib/editormd/editormd.min.js" th:src="@{lib/editormd/editormd.min.js}"></script>
+    <script src="../static/js/me_input.js" th:src="@{js/me_input.js}"></script>
+
+    <style>
+        .layui-form-label {
+            background-color: lightgrey !important;
+        }
+        xm-select {
+            min-height: 38px;
+        }
+    </style>
+
+    <script>
+        // markdown初始化
+        let contentEditor;
+        $(function () {
+            contentEditor = editormd("md-content", {
+                width: "100%",
+                height: 640,
+                syncScrolling: "single",
+                path: "lib/editormd/lib/",
+                theme: "grey",//工具栏主题
+                emoji: true,
+                saveHTMLToTextarea: true,
+                htmlDecode: true
+            });
+        });
+    </script>
+</body>
+
+</html>

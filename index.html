@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment nav-size nav-shadow">
+        <div class="ui container">
+            <div class="ui inverted secondary pointing stackable menu">
+                <img src="./static/images/logo.png" alt="" class="item logo">
+                <a href="http://127.0.0.1:5500/front/index.html" class="item menu-item mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="http://127.0.0.1:5500/front/blog.html" class="item menu-item mobile-hide"><i class="file alternate icon"></i>博客</a>
+                <a href="http://127.0.0.1:5500/front/comments.html" class="item menu-item mobile-hide"><i class="comment alternate icon"></i>留言</a>
+                <a href="http://127.0.0.1:5500/front/about.html" class="item menu-item mobile-hide active"><i class="info icon"></i>关于</a>
+                <div class="right item menu-item mobile-hide">
+                    <div class="ui inverted icon input">
+                        <input type="text" placeholder="输入以搜索...">
+                        <i class="circular search link icon"></i>
+                    </div>
+                </div>
+                <!-- 登录前的头像信息 -->
+                <!-- <a href="#" class="item login"><i class="large user circle icon"></i>登录</a> -->
+                <!-- 登录后的头像 -->
+                <a href="#" class="item login after" data-position="bottom center"><img src="https://picsum.photos/id/1/50" alt="" class="ui circular image"></a>
+                <div class="ui popup">
+                    <div class="ui middle aligned list">
+                        <!-- 管理员功能 -->
+                        <!-- <div class="item">
+                            <a class="ui teal admin button">
+                                管理博客
+                            </a>
+                        </div> -->
+                        <!-- 普通功能 -->
+                        <div class="item">
+                            <a class="ui teal data button">
+                                个人资料
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="ui teal logout button">
+                                退出登录
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui black icon button top-right mobile-show" id="menu-toggle">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!-- 中间内容 -->
+    <div style="background-image: url(./static/images/darkness.png);">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <!-- 左边部分 -->
+                <div class="eleven wide column body-margin">
+                    <!-- header -->
+                    <div class="ui top attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <h3 class="ui teal header">博客</h3>
+                            </div>
+                            <div class="right aligned column">
+                                共
+                                <h2 class="ui orange header inline-block"> 14 </h2> 篇
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content -->
+                    <div class="ui attached segment">
+                        <div class="ui content-padding vertical segment">
+                            <div class="ui stackable grid">
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/1/800/500" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                                <div class="eleven wide column text-spacing">
+                                    <h3>新增QQ音乐与网易云音乐搜索</h3>
+                                    <p>给之前的文章配乐新增了网易云搜索接口，现在支持QQ音乐与网易云音乐。</p>
+                                    <div class="ui mobile stackable grid" style="position: absolute; width: 100%; top: 90%;">
+                                        <!-- <div class="eleven wide column"> -->
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <i class="calendar icon"></i> 2020-12-20
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 1234
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                        <!-- <div class="right aligned five wide column"> -->
+                                        <a href="#" target="_blank" class="ui right lable"><i class="tags icon"></i>个人日记</a>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui content-padding vertical segment">
+                            <div class="ui stackable grid">
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/1/800/500" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                                <div class="eleven wide column text-spacing">
+                                    <h3>新增QQ音乐与网易云音乐搜索</h3>
+                                    <p>给之前的文章配乐新增了网易云搜索接口，现在支持QQ音乐与网易云音乐。</p>
+                                    <div class="ui mobile stackable grid" style="position: absolute; width: 100%; top: 90%;">
+                                        <!-- <div class="eleven wide column"> -->
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <i class="calendar icon"></i> 2020-12-20
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 1234
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                        <!-- <div class="right aligned five wide column"> -->
+                                        <a href="#" target="_blank" class="ui right lable"><i class="tags icon"></i>个人日记</a>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui content-padding vertical segment">
+                            <div class="ui stackable grid">
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://picsum.photos/id/1/800/500" alt="" class="ui rounded image">
+                                    </a>
+                                </div>
+                                <div class="eleven wide column text-spacing">
+                                    <h3>新增QQ音乐与网易云音乐搜索</h3>
+                                    <p>给之前的文章配乐新增了网易云搜索接口，现在支持QQ音乐与网易云音乐。</p>
+                                    <div class="ui mobile stackable grid" style="position: absolute; width: 100%; top: 90%;">
+                                        <!-- <div class="eleven wide column"> -->
+                                        <div class="ui horizontal link list">
+                                            <div class="item">
+                                                <i class="calendar icon"></i> 2020-12-20
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 1234
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                        <!-- <div class="right aligned five wide column"> -->
+                                        <a href="#" target="_blank" class="ui right lable"><i class="tags icon"></i>个人日记</a>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="ui bottom attached segment">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <button class="ui teal basic button">上一页</button>
+                            </div>
+                            <div class="right aligned column">
+                                <button class="ui teal basic button">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右边部分 -->
+                <div class="five wide column body-margin">
+                    <!-- 文章分类 -->
+                    <div class="ui segment">
+                        <div class="ui vertical segment segment-padding">
+                            <h3 class="ui teal header">文章分类</h3>
+                        </div>
+                        <div class="ui vertical segment segment-padding">
+                            <div class="ui secondary fluid vertical menu">
+                                <a href="#" class="item active teal">
+                                    全部文章
+                                    <div class="ui teal basic label">12</div>
+                                </a>
+                                <a href="#" class="item">
+                                    全部文章
+                                    <div class="ui teal basic label">12</div>
+                                </a>
+                                <a href="#" class="item">
+                                    全部文章
+                                    <div class="ui teal basic label">12</div>
+                                </a>
+                                <a href="#" class="item">
+                                    全部文章
+                                    <div class="ui teal basic label">12</div>
+                                </a>
+                                <a href="#" class="item">
+                                    全部文章
+                                    <div class="ui teal basic label">12</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 热门文章 -->
+                    <div class="ui segment body-margin">
+                        <div class="ui vertical segment segment-padding">
+                            <h3 class="ui teal header">热门文章</h3>
+                        </div>
+                        <div class="ui vertical segment segment-padding">
+                            <div class="ui ordered selection list">
+                                <a class="item">
+                                    新增QQ音乐与网易云音乐搜索
+                                </a>
+                                <a class="item">
+                                    新增QQ音乐与网易云音乐搜索
+                                </a>
+                                <a class="item">
+                                    新增QQ音乐与网易云音乐搜索
+                                </a>
+                                <a class="item">
+                                    新增QQ音乐与网易云音乐搜索
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- 底部信息 -->
+    <footer class="ui inverted segment" style="margin: 0px;">
+        <div class="ui container">
+            <div class="ui inverted divided stackable grid">
+                <div class="six wide column center aligned">
+                    <br>
+                    <h4>Meiko</h4>
+                    <p>如果手上没有剑，我就不能保护你</p>
+                    <p>如果一直握着剑，我就无法抱紧你</p>
+                </div>
+                <div class="five wide column center aligned">
+                    <h4>相关连接</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item"><i class="file alternate icon"></i>&nbsp&nbsp&nbsp博文</a>
+                        <a href="#" class="item"><i class="comment alternate icon"></i>&nbsp&nbsp&nbsp留言</a>
+                        <a href="#" class="item"><i class="file alternate outline icon"></i>&nbsp&nbsp&nbsp归档</a>
+                        <a href="#" class="item"><i class="info icon"></i>&nbsp&nbsp&nbsp关于</a>
+                    </div>
+                </div>
+                <div class="five wide column about">
+                    <h4 style="text-align: center;">联系我</h4>
+                    <p class="item"><i class="qq icon"></i>&nbsp&nbsp&nbspQQ: 1056427550</p>
+                    <p class="item"><i class="envelope icon"></i>&nbsp&nbsp&nbsp邮箱: 1056427550@qq.com</p>
+                    <p class="item"><i class="wechat icon"></i>&nbsp&nbsp&nbspwechat: 15768427201</p>
+                    <p class="item"><i class="github icon"></i>&nbsp&nbsp&nbspgithub: justlethe</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p style="text-align: center;">Copyright © 2020-2021 Meiko 丨 All Rights Reserved V.1.0.0</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="./static/css/me.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script>
+        $('#menu-toggle').click(function() {
+            $('.menu-item').toggleClass('mobile-hide');
+        });
+        $('.item.login')
+            .popup({
+                popup: $('.custom.popup'),
+                on: 'click'
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.personal.blog.mapper.BlogMapper">
+  <resultMap id="BaseResultMap" type="com.personal.blog.entity.Blog">
+    <!--@mbg.generated-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="picture" jdbcType="VARCHAR" property="picture" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="views" jdbcType="INTEGER" property="views" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="recommend" jdbcType="TINYINT" property="recommend" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="published" jdbcType="TINYINT" property="published" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="mdcontent" jdbcType="VARCHAR" property="mdcontent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, title, content, picture, `type`, views, category, recommend, create_date, update_date, 
+    published, description, mdcontent
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from blog
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from blog
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.personal.blog.entity.Blog" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into blog (title, content, picture, 
+      `type`, views, category, 
+      recommend, create_date, update_date, 
+      published, description, mdcontent
+      )
+    values (#{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{picture,jdbcType=VARCHAR}, 
+      #{type,jdbcType=VARCHAR}, #{views,jdbcType=INTEGER}, #{category,jdbcType=VARCHAR}, 
+      #{recommend,jdbcType=TINYINT}, #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP}, 
+      #{published,jdbcType=TINYINT}, #{description,jdbcType=VARCHAR}, #{mdcontent,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.personal.blog.entity.Blog" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into blog
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        title,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="picture != null">
+        picture,
+      </if>
+      <if test="type != null">
+        `type`,
+      </if>
+      <if test="views != null">
+        views,
+      </if>
+      <if test="category != null">
+        category,
+      </if>
+      <if test="recommend != null">
+        recommend,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="published != null">
+        published,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="mdcontent != null">
+        mdcontent,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="picture != null">
+        #{picture,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="views != null">
+        #{views,jdbcType=INTEGER},
+      </if>
+      <if test="category != null">
+        #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="recommend != null">
+        #{recommend,jdbcType=TINYINT},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="published != null">
+        #{published,jdbcType=TINYINT},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="mdcontent != null">
+        #{mdcontent,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.personal.blog.entity.Blog">
+    <!--@mbg.generated-->
+    update blog
+    <set>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="picture != null">
+        picture = #{picture,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        `type` = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="views != null">
+        views = #{views,jdbcType=INTEGER},
+      </if>
+      <if test="category != null">
+        category = #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="recommend != null">
+        recommend = #{recommend,jdbcType=TINYINT},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="published != null">
+        published = #{published,jdbcType=TINYINT},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="mdcontent != null">
+        mdcontent = #{mdcontent,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.personal.blog.entity.Blog">
+    <!--@mbg.generated-->
+    update blog
+    set title = #{title,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      picture = #{picture,jdbcType=VARCHAR},
+      `type` = #{type,jdbcType=VARCHAR},
+      views = #{views,jdbcType=INTEGER},
+      category = #{category,jdbcType=VARCHAR},
+      recommend = #{recommend,jdbcType=TINYINT},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      published = #{published,jdbcType=TINYINT},
+      description = #{description,jdbcType=VARCHAR},
+      mdcontent = #{mdcontent,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

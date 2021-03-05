@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>首页</title>
+        <link rel="icon" href="/static/images/titleLogo.png" th:href="@{images/titleLogo.png}">
+        <link rel="stylesheet" type="text/css" href="../static/css/normalize.css" th:href="@{css/normalize.css}"/>
+        <link rel="stylesheet" type="text/css" href="../static/css/htmleaf-demo.css" th:href="@{css/htmleaf-demo.css}">
+        <link href="/static/css/me_main.css" th:href="@{css/me_main.css}" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+        <script src="/static/js/autologin.js" th:src="@{js/autologin.js}"></script>
+        <style>
+            html, body {
+                height: 100%;
+            }
+
+            .htmleaf-container {
+                background: url("./images/night.png");
+                background-size: 100%;
+                height: 100%;
+            }
+
+            header.htmleaf-header {
+                position: absolute;
+                top: 10%;
+                width: 100%;
+            }
+
+            .wrapper {
+                bottom: 30%;
+                left: 50%;
+                border-radius: 5px;
+                position: absolute;
+                border-radius: 5px;
+            }
+
+            .text {
+                flex: 0 0 100%;
+                font-size: 14rem;
+                font-weight: 900;
+                color: #00000000;
+                text-align: center;
+                font-family: 'Lato', sans-serif;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-bottom: 1px solid #d4d7ff;
+                border-top: 1px solid #d4d7ff;
+                background: url(./img/source.gif);
+                -webkit-background-clip: text;
+            }
+
+            @media only screen and (max-width: 767px) {
+                body {
+                    font-size: 2em;
+                }
+
+                .text {
+                    font-size: 7rem;
+                }
+            }
+
+            .text:after {
+                content: attr(data-text);
+                -webkit-text-stroke: 1.5px #d4d7ff;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -49%);
+                background: url(./img/source.gif);
+                -webkit-background-clip: text;
+                background-size: 43%;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="htmleaf-container">
+            <header class="htmleaf-header">
+                <h1>一个默默无名的后端小白 ♥ By Meiko <span>艰辛曲折必然，历尽沧桑悟然</span></h1>
+                <div class="htmleaf-links">
+                    <a class="htmleaf-icon icon-htmleaf-home-outline" href="http://47.119.131.193/blog/main" title="进入博客"><span> 进入博客</span></a>
+                </div>
+            </header>
+            <div class="wrapper">
+                <div class="text" data-text="MEIKO">MEIKO</div>
+            </div>
+        </div>
+    </body>
+
+</html>

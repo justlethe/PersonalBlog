@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>博客详情页</title>
+        <link rel="icon" href="/static/images/titleLogo.png" th:href="@{images/titleLogo.png}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <link rel="stylesheet" href="../static/css/animate.css" th:href="@{css/animate.css}">
+        <link rel="stylesheet" href="../static/css/prism.css" th:href="@{css/prism.css}">
+    </head>
+
+    <body>
+
+        <!-- 导航 -->
+        <nav class="ui inverted attached segment nav-size nav-shadow">
+            <div class="ui container">
+                <div class="ui inverted secondary pointing stackable menu">
+
+                    <!--/*/<th:block th:insert="_fragments :: menu(2)">/*/-->
+                    <!--/*/</th:block>/*/-->
+
+                </div>
+            </div>
+            <a href="#" class="ui black icon button top-right mobile-show" id="menu-toggle">
+                <i class="sidebar icon"></i>
+            </a>
+        </nav>
+
+        <!-- 中间内容 -->
+        <div id="basic-waypoint">
+            <div class="ui container content-padding animate__animated animate__fadeInLeft">
+                <div class="ui segment blog">
+                    <!-- 博客标题头 -->
+                    <div class="ui vertical segment">
+                        <div class="ui grid">
+                            <div class="twelve wide column">
+                                <h2 id="blog-header"></h2>
+                                <p>
+                                    作者：meiko
+                                    <span class="msg-space">更新于 <span id="creatDate"></span></span>
+                                    <span class="msg-space">浏览：<span id="views"></span>次</span>
+                                </p>
+                            </div>
+                            <div class="four wide right aligned column">
+                                <b class="ui teal basic big label" id="type">原创</b>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 博客主体内容 -->
+                    <div class="ui vertical segment">
+                        <div id="content" class="typo typo-selection">
+
+                        </div>
+                        <!-- 博客信息 -->
+                        <div class="ui message blog-msg">
+                            <div class="ui list">
+                                <li>非特殊说明，本文版权归 Meiko 所有，转载请注明出处.</li>
+                                <li>本文标题：<span class="blog-title">新增QQ音乐与网易云音乐搜索</span></li>
+                                <li id="blog-category">本文类别：
+                                    <div class="ui label">个人日记</div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 游客评论功能 -->
+                    <div class="ui vertical segment divid-segment">
+                        <h3 class="ui dividing header">发表评论</h3>
+                        <form class="ui reply form">
+                            <div class="field">
+                                <textarea name="content"></textarea>
+                            </div>
+                            <div class="ui blue labeled submit icon button" onclick="submitComment(this)"><i class="icon edit"></i> 提交留言</div>
+                        </form>
+                    </div>
+                    <!-- 游客回复列表 -->
+                    <div class="ui bottom vertical segment">
+                        <div class="ui threaded comments" id="comments">
+                            <h3 class="ui dividing header">Comments</h3>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 工具条 -->
+        <div class="tools menu">
+            <div class="ui vertical icon buttons">
+                <a href="#comments" class="ui teal button" style="color: black;">留言</a>
+                <a href="#" class="ui teal button goTop">
+                    <img class="rocket" src="../static/images/icon_rocket.png" th:src="@{images/icon_rocket.png}"
+                         alt="">
+                </a>
+            </div>
+        </div>
+
+
+        <!--/*/<th:block th:insert="_fragments :: footer">/*/-->
+        <!--/*/</th:block>/*/-->
+
+        <!--/*/<th:block th:insert="_fragments :: link">/*/-->
+        <!--/*/</th:block>/*/-->
+        <script src="../static/js/me.js" th:src="@{js/me.js}"></script>
+        <script src="../static/js/me_blog.js" th:src="@{js/me_blog.js}"></script>
+    </body>
+
+</html>

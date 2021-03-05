@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客发布</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./static/lib/editormd/css/editormd.min.css">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment nav-size nav-shadow">
+        <div class="ui container">
+            <div class="ui inverted secondary pointing stackable menu">
+                <img src="./static/images/logo.png" alt="" class="item logo">
+                <a href="http://127.0.0.1:5500/front/index.html" class="item menu-item mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="http://127.0.0.1:5500/front/blog.html" class="item menu-item mobile-hide"><i class="file alternate icon"></i>博客</a>
+                <a href="http://127.0.0.1:5500/front/comments.html" class="item menu-item mobile-hide"><i class="comment alternate icon"></i>留言</a>
+                <a href="http://127.0.0.1:5500/front/about.html" class="item menu-item mobile-hide active"><i class="info icon"></i>关于</a>
+                <!-- 登录后的头像 -->
+                <a href="#" class="right item login after" data-position="bottom center"><img src="https://picsum.photos/id/1/50" alt="" class="ui circular image"></a>
+                <div class="ui popup">
+                    <div class="ui middle aligned list">
+                        <!-- 管理员功能 -->
+                        <!-- <div class="item">
+                            <a class="ui teal admin button">
+                                管理博客
+                            </a>
+                        </div> -->
+                        <!-- 普通功能 -->
+                        <div class="item">
+                            <a class="ui teal data button">
+                                个人资料
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="ui teal logout button">
+                                退出登录
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui black icon button top-right mobile-show" id="menu-toggle">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!-- 中间内容 -->
+    <div style="background-image: url(./static/images/darkness.png);">
+        <div class="ui container content-padding text-spacing">
+            <form action="#" method="POST" class="ui blogInput form">
+
+                <!-- 博客标题与类别 -->
+                <div class="field">
+                    <div class="ui left labeled input">
+                        <div class="ui selection compact teal basic dropdown label type">
+                            <input type="hidden" name="type">
+                            <i class="dropdown icon"></i>
+                            <div class="text">原创</div>
+                            <div class="menu">
+                                <div class="item" data-value="原创">原创</div>
+                                <div class="item" data-value="转载">转载</div>
+                            </div>
+                        </div>
+                        <input type="text" name="title" placeholder="文章标题">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui selection search basic dropdown label categories">
+                        <input type="hidden" name="categories">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">文章类别</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">个人日记</div>
+                            <div class="item" data-value="2">javascript</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 博客正文 -->
+                <div class="field">
+                    <div id="md-content" style="z-index: 1 !important;">
+                        <textarea name="content" placeholder="请输入内容" cols="30" rows="10" style="display: none;"></textarea>
+                    </div>
+                </div>
+
+                <!-- 图片引用 -->
+                <div class="field">
+                    <div class="ui left labeled input">
+                        <label class="ui teal basic label">文章图片</label>
+                        <input type="text" name="indexPicture" placeholder="图片地址">
+                    </div>
+                </div>
+
+                <!-- 功能按钮 -->
+                <div class="ui right aligned container">
+                    <button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
+                    <button class="ui teal button">保存</button>
+                    <button class="ui blue button">发布</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 底部信息 -->
+    <footer class="ui inverted segment" style="margin: 0px;">
+        <div class="ui container">
+            <div class="ui inverted divided stackable grid">
+                <div class="six wide column center aligned">
+                    <br>
+                    <h4>Meiko</h4>
+                    <p>如果手上没有剑，我就不能保护你</p>
+                    <p>如果一直握着剑，我就无法抱紧你</p>
+                </div>
+                <div class="five wide column center aligned">
+                    <h4>相关连接</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item"><i class="file alternate icon"></i>&nbsp&nbsp&nbsp博文</a>
+                        <a href="#" class="item"><i class="comment alternate icon"></i>&nbsp&nbsp&nbsp留言</a>
+                        <a href="#" class="item"><i class="file alternate outline icon"></i>&nbsp&nbsp&nbsp归档</a>
+                        <a href="#" class="item"><i class="info icon"></i>&nbsp&nbsp&nbsp关于</a>
+                    </div>
+                </div>
+                <div class="five wide column about">
+                    <h4 style="text-align: center;">联系我</h4>
+                    <p class="item"><i class="qq icon"></i>&nbsp&nbsp&nbspQQ: 1056427550</p>
+                    <p class="item"><i class="envelope icon"></i>&nbsp&nbsp&nbsp邮箱: 1056427550@qq.com</p>
+                    <p class="item"><i class="wechat icon"></i>&nbsp&nbsp&nbspwechat: 15768427201</p>
+                    <p class="item"><i class="github icon"></i>&nbsp&nbsp&nbspgithub: justlethe</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p style="text-align: center;">Copyright © 2020-2021 Meiko 丨 All Rights Reserved V.1.0.0</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="./static/css/typo.css">
+    <link rel="stylesheet" href="./static/css/me.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript" src="./static/js/me.js"></script>
+    <script src="./static/lib/editormd/editormd.min.js"></script>
+
+    <script>
+        // markdown初始化
+        var contentEditor;
+        $(function() {
+            contentEditor = editormd("md-content", {
+                width: "100%",
+                height: 640,
+                syncScrolling: "single",
+                path: "./static/lib/editormd/lib/"
+            });
+        });
+    </script>
+</body>
+
+</html>

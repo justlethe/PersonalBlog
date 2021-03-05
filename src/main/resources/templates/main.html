@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客首页</title>
+    <link rel="icon" href="/static/images/titleLogo.png" th:href="@{images/titleLogo.png}">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="../static/js/autologin.js" th:src="@{js/autologin.js}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="/static/layui/css/layui.css" th:href="@{layui/css/layui.css}" media="all">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment nav-size nav-shadow">
+        <div class="ui container">
+            <div class="ui inverted secondary pointing stackable menu">
+
+                <!--/*/<th:block th:insert="_fragments :: menu(2)">/*/-->
+                <!--/*/</th:block>/*/-->
+
+            </div>
+        </div>
+        <a href="#" class="ui black icon button top-right mobile-show" id="menu-toggle">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!-- 中间内容 -->
+    <div id="basic-waypoint">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <!-- 左边部分 -->
+                <div id="leftPart" class="eleven wide column body-margin">
+
+                    <!-- content -->
+                    <ul id="blogList" style="padding: 0px !important;margin-top: 0px !important;">
+
+                    </ul>
+
+                </div>
+
+                <!-- 右边部分 -->
+                <div id="rightPart" class="five wide column animate__animated animate__fadeInRight"
+                    style="padding-top: 1.5em !important;">
+                    <!-- 文章分类 -->
+                    <div class="ui segment">
+                        <div class="ui vertical center aligned segment">
+                            <div class="ui fluid icon input">
+                                <input class="search" type="text" placeholder="输入以搜索...">
+                                <i class="circular search link icon" onclick="searchBlog(this)"></i>
+                            </div>
+                        </div>
+                        <div class="ui vertical segment segment-padding">
+                            <h3 class="ui teal header">文章分类</h3>
+                        </div>
+                        <div class="ui vertical segment segment-padding">
+                            <div id="categoryList" class="ui secondary fluid vertical menu">
+                                <a onclick="reloadBlog(this)" class="item active teal">
+                                    <span class="category">全部文章</span>
+                                    <div id="allBlog" class="ui teal basic label">12</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 热门文章 -->
+                    <div class="ui segment">
+                        <div class="ui vertical segment segment-padding">
+                            <h3 class="ui teal header">热门文章</h3>
+                        </div>
+                        <div class="ui vertical segment segment-padding">
+                            <div class="ui ordered selection list">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 工具条 -->
+    <div class="tools menu">
+        <div class="ui vertical icon buttons">
+            <a href="#" class="ui teal button goTop">
+                <img class="rocket" src="../static/images/icon_rocket.png" th:src="@{images/icon_rocket.png}" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!--/*/<th:block th:insert="_fragments :: footer">/*/-->
+    <!--/*/</th:block>/*/-->
+
+    <!--/*/<th:block th:insert="_fragments :: link">/*/-->
+    <!--/*/</th:block>/*/-->
+
+    <script src="/static/layui/layui.js" th:src="@{layui/layui.js}" charset="utf-8"></script>
+    <script src="/static/js/me_index.js" th:src="@{js/me_index.js}"></script>
+    <script type="text/javascript" src="../static/js/me.js" th:src="@{js/me.js}"></script>
+    <style>
+        .column {
+            padding: 0.5em 1.5em !important;
+            margin: 0px !important;
+        }
+
+        a.ui.header:hover,
+        a.type:hover {
+            cursor: pointer;
+            color: teal;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

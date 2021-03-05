@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+
+<body>
+
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment nav-size nav-shadow">
+        <div class="ui container">
+            <div class="ui inverted secondary pointing stackable menu">
+                <img src="./static/images/logo.png" alt="" class="item logo">
+                <a href="http://127.0.0.1:5500/front/index.html" class="item menu-item mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="http://127.0.0.1:5500/front/blog.html" class="item menu-item mobile-hide"><i class="file alternate icon"></i>博客</a>
+                <a href="http://127.0.0.1:5500/front/comments.html" class="item menu-item mobile-hide"><i class="comment alternate icon"></i>留言</a>
+                <a href="http://127.0.0.1:5500/front/about.html" class="item menu-item mobile-hide active"><i class="info icon"></i>关于</a>
+                <div class="right item menu-item mobile-hide">
+                    <div class="ui inverted icon input">
+                        <input type="text" placeholder="输入以搜索...">
+                        <i class="circular search link icon"></i>
+                    </div>
+                </div>
+                <!-- 登录前的头像信息 -->
+                <!-- <a class="item login before"><i class="large user circle icon"></i>登录</a> -->
+                <div class="ui tiny modal">
+                    <div class="ui top attached tabular menu">
+                        <a class="item active" data-tab="first">登录 </a>
+                        <a class="item" data-tab="second">注册 </a>
+                    </div>
+                    <!-- 登录页面 -->
+                    <div class="ui attached tab segment active" data-tab="first">
+                        <form class="ui form login basic segment">
+                            <div class="field">
+                                <label>用户名</label>
+                                <input name="username" type="text" autofocus="false">
+                            </div>
+                            <div class="field">
+                                <label>密码</label>
+                                <input name="password" type="password">
+                            </div>
+                            <div class="ui primary submit button">登录</div>
+                        </form>
+                    </div>
+                    <!-- 注册页面 -->
+                    <div class="ui attached tab segment" data-tab="second">
+                        <form class="ui form register basic segment">
+                            <div class="field">
+                                <label>用户名</label>
+                                <input name="username" type="text">
+                            </div>
+                            <div class="field">
+                                <label>密码</label>
+                                <input name="password-1" id="password1" type="password">
+                            </div>
+                            <div class="field">
+                                <label>确认密码</label>
+                                <input name="password-2" id="password2" type="password">
+                            </div>
+                            <div class="ui primary submit button">注册</div>
+                        </form>
+                    </div>
+                </div>
+                <!-- 登录后的头像 -->
+                <a href="#" class="item login after" data-position="bottom center"><img src="https://picsum.photos/id/1/50" alt="" class="ui circular image"></a>
+                <div class="ui popup">
+                    <div class="ui middle aligned list">
+                        <!-- 管理员功能 -->
+                        <!-- <div class="item">
+                            <a class="ui teal admin button">
+                                管理博客
+                            </a>
+                        </div> -->
+                        <!-- 普通功能 -->
+                        <div class="item">
+                            <a class="ui teal data button">
+                                个人资料
+                            </a>
+                        </div>
+                        <div class="item">
+                            <div class="ui teal logout button">
+                                退出登录
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui black icon button top-right mobile-show" id="menu-toggle">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!-- 中间内容 -->
+    <div style="background-image: url(./static/images/darkness.png);">
+        <div class="ui container content-padding text-spacing about-web">
+            <!-- 界面图 -->
+            <div class="ui top attached segment">
+                <div class="about-image">
+                    <div class="about-img-msg text-spacing">一个默默无闻的后端小白·Meiko
+                        <br> <span>wait for 朱旖旎</span> </div>
+                    <img src="./static/images/alone.png" alt="" class="ui medium rounded image about-img">
+                    <!-- <img src="./static/images/alone.png" alt="" style="width: 100%; opacity: 0.5;" class="ui medium rounded image"> -->
+                </div>
+            </div>
+            <!-- 关于我 -->
+            <div class="ui attached segment">
+                <h2 class="ui header"><span>丨</span>关于我</h2>
+                <div class="ui basic segment">
+                    <p> <span class="ui tiny header">就读学校:</span> 五邑大学，智能制造学部，网络工程专业</p>
+                    <p> <span class="ui tiny header">擅长技术:</span>
+                        <p>掌握 JAVA SE，JAVA WEB 开发技能，熟练 SSM 框架，掌握 SpringBoot，mybatis 的使用；</p>
+                        <p>掌握MySQL数据库；</p>
+                        <p>熟练jQuery、AJAX、Javascript、 Html5、CSS3等前端页面技术；</p>
+                        <p>掌握Linux等系统基本命令操作。</p>
+                    </p>
+                    <p> <span class="ui tiny header">个人简介:</span> 一个99年出生的技术薄弱的开发小白，目前是还没毕业的一名大四狗，迷茫的到处寻找自己的容身之处。</p>
+                </div>
+            </div>
+            <!-- 关于本站 -->
+            <div class="ui attached segment">
+                <h2 class="ui header"><span>丨</span>关于本站</h2>
+                <div class="ui basic segment">
+                    <p> <span class="ui tiny header">本站简介:</span> 本站建于2020年1月，主要是用于记录个人学习经验与发展历程。</p>
+                    <p> <span class="ui tiny header">本站前端:</span> 采用<i class="ui label">semantic-ui</i>框架 </p>
+                    <p> <span class="ui tiny header">本站后端:</span> 采用<i class="ui label">springboot &nbsp; hibernate</i>框架 </p>
+                    <p> <span class="ui tiny header">本站源代码地址:</span> <a href="#">http://google.com</a></p>
+                </div>
+            </div>
+            <!-- 特别说明 -->
+            <div class="ui attached segment">
+                <h2 class="ui header"><span>丨</span>特别说明</h2>
+                <div class="ui basic segment">
+                    <p> 本站文章仅代表个人观点，和任何组织或个人无关。</p>
+                    <p> 本站前端开发代码没有考虑对IE浏览器的兼容。</p>
+                    <p> 用户邮箱仅作回复消息用，不对外使用。</p>
+                </div>
+            </div>
+            <!-- 尾部图 -->
+            <div class="ui bottom attached segment">
+                <img src="./static/images/code.png" alt="" class="ui medium rounded image" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部信息 -->
+    <footer class="ui inverted segment" style="margin: 0px;">
+        <div class="ui container">
+            <div class="ui inverted divided stackable grid">
+                <div class="six wide column center aligned">
+                    <br>
+                    <h4>Meiko</h4>
+                    <p>如果手上没有剑，我就不能保护你</p>
+                    <p>如果一直握着剑，我就无法抱紧你</p>
+                </div>
+                <div class="five wide column center aligned">
+                    <h4>相关连接</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item"><i class="file alternate icon"></i>&nbsp&nbsp&nbsp博文</a>
+                        <a href="#" class="item"><i class="comment alternate icon"></i>&nbsp&nbsp&nbsp留言</a>
+                        <a href="#" class="item"><i class="file alternate outline icon"></i>&nbsp&nbsp&nbsp归档</a>
+                        <a href="#" class="item"><i class="info icon"></i>&nbsp&nbsp&nbsp关于</a>
+                    </div>
+                </div>
+                <div class="five wide column about">
+                    <h4 style="text-align: center;">联系我</h4>
+                    <p class="item"><i class="qq icon"></i>&nbsp&nbsp&nbspQQ: 1056427550</p>
+                    <p class="item"><i class="envelope icon"></i>&nbsp&nbsp&nbsp邮箱: 1056427550@qq.com</p>
+                    <p class="item"><i class="wechat icon"></i>&nbsp&nbsp&nbspwechat: 15768427201</p>
+                    <p class="item"><i class="github icon"></i>&nbsp&nbsp&nbspgithub: justlethe</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p style="text-align: center;">Copyright © 2020-2021 Meiko 丨 All Rights Reserved V.1.0.0</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="./static/css/me.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript" src="./static/js/me.js"></script>
+
+</body>
+
+</html>
