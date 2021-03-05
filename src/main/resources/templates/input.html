@@ -37,7 +37,7 @@
                 <!-- 博客标题、类别、描述、首页图 -->
                 <div class="layui-row">
                     <!-- 左侧部分 -->
-                    <div class="layui-col-xs5">
+                    <div class="layui-col-xs6">
                         <!-- 文章声明与推荐 -->
                         <div class="layui-form-item">
                             <div class="layui-col-xs5">
@@ -86,8 +86,15 @@
                         </div>
                     </div>
                     <!-- 右侧部分，首页图 -->
-                    <div class="layui-col-xs7" style="text-align: right;">
-                        <img src="https://picsum.photos/id/1/600/350" alt="">
+                    <div class="layui-col-xs6" style="text-align: right;">
+                        <div class="layui-form-item layui-col-xs11" style="float: right">
+                            <label class="layui-form-label">图片地址</label>
+                            <div class="layui-input-block">
+                                <input type="url" name="imgUrl" value="https://picsum.photos/id/1"
+                                       autocomplete="off" class="layui-input" onblur="updateImg(this)">
+                            </div>
+                        </div>
+                        <img id="blogImg" src="https://picsum.photos/id/1/505/295" alt="">
                     </div>
                 </div>
 
@@ -118,9 +125,9 @@
 
     <script src="/static/layui/layui.js" th:src="@{layui/layui.js}" charset="utf-8"></script>
     <script src="/static/js/xm-select.js" th:src="@{js/xm-select.js}"></script>
-    <script src="../static/js/me.js" th:src="@{js/me.js}"></script>
-    <script src="../static/lib/editormd/editormd.min.js" th:src="@{lib/editormd/editormd.min.js}"></script>
-    <script src="../static/js/me_input.js" th:src="@{js/me_input.js}"></script>
+    <script src="/static/js/me.js" th:src="@{js/me.js}"></script>
+    <script src="/static/lib/editormd/editormd.min.js" th:src="@{lib/editormd/editormd.min.js}"></script>
+    <script src="/static/js/me_input.js" th:src="@{js/me_input.js}"></script>
 
     <style>
         .layui-form-label {
@@ -143,7 +150,10 @@
                 theme: "grey",//工具栏主题
                 emoji: true,
                 saveHTMLToTextarea: true,
-                htmlDecode: true
+                htmlDecode: true,
+                imageUpload : true,
+                imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],//支持接收的图片上传的格式
+                imageUploadURL : "http://47.119.131.193/blog/admin/saveContentImg",//后端图片上传的服务地址
             });
         });
     </script>

@@ -14,3 +14,539 @@
 2021-03-05 14:04:24.509  WARN 20476 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
 2021-03-05 14:04:24.528  WARN 20476 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
 2021-03-05 14:04:25.779  INFO 20476 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 1.773 seconds (JVM running for 53069.848)
+2021-03-05 16:08:51.320  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 16:08:51.342 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 16:08:51.343  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 16:08:54.455  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:08:54.526  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:08:54.572  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:08:54.623  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:08:57.176  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 6.737 seconds (JVM running for 12.293)
+2021-03-05 16:09:26.482  INFO 7808 --- [http-nio-8080-exec-1] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 16:09:26.482  INFO 7808 --- [http-nio-8080-exec-1] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@417d3595]}
+2021-03-05 16:09:26.587  INFO 7808 --- [http-nio-8080-exec-1] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 16:09:26.588  INFO 7808 --- [http-nio-8080-exec-1] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 16:09:40.461  INFO 7808 --- [http-nio-8080-exec-9] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 16:09:40.462  INFO 7808 --- [http-nio-8080-exec-9] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@417d3595]}
+2021-03-05 16:09:40.464  INFO 7808 --- [http-nio-8080-exec-9] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 16:09:40.466  INFO 7808 --- [http-nio-8080-exec-9] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 16:09:47.681  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 16:09:47.681  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+2021-03-05 16:09:47.682  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- main
+2021-03-05 16:09:47.682  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 16:11:22.155  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 16:11:22.156 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 16:11:22.156  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 16:11:22.367  WARN 7808 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.personal.blog.mapper]' package. Please check your configuration.
+2021-03-05 16:11:22.676  WARN 7808 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+2021-03-05 16:11:22.723 ERROR 7808 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) [spring-boot-2.4.2.jar:2.4.2]
+	at com.personal.blog.BlogApplication.main(BlogApplication.java:13) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.4.2.jar:2.4.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 25 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:593) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:429) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:626) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:215) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9$$FastClassBySpringCGLIB$$c95c1734.invoke(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.3.jar:5.3.3]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.3.jar:5.3.3]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9.sqlSessionFactory(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 26 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:591) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119) ~[mybatis-3.5.6.jar:3.5.6]
+	... 41 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.6.jar:3.5.6]
+	... 45 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.6.jar:3.5.6]
+	... 47 common frames omitted
+
+2021-03-05 16:11:28.230  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 16:11:28.231 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 16:11:28.231  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 16:11:29.375  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:29.446  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:29.494  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:29.538  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:31.442  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 3.251 seconds (JVM running for 166.56)
+2021-03-05 16:11:47.063  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 16:11:47.063 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 16:11:47.063  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 16:11:48.066  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:48.090  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:48.166  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:48.212  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:50.663  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 3.632 seconds (JVM running for 185.782)
+2021-03-05 16:11:50.895  INFO 3556 --- [main] com.personal.blog.BlogApplicationTests   : Starting BlogApplicationTests using Java 1.8.0_131 on FUCK-YOU with PID 3556 (started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 16:11:50.896 DEBUG 3556 --- [main] com.personal.blog.BlogApplicationTests   : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 16:11:50.898  INFO 3556 --- [main] com.personal.blog.BlogApplicationTests   : No active profile set, falling back to default profiles: default
+2021-03-05 16:11:53.169  WARN 3556 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:53.229  WARN 3556 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:53.268  WARN 3556 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:53.321  WARN 3556 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 16:11:56.596  INFO 3556 --- [main] com.personal.blog.BlogApplicationTests   : Started BlogApplicationTests in 6.257 seconds (JVM running for 8.374)
+2021-03-05 16:11:58.473 DEBUG 3556 --- [main] c.p.blog.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,permission,avator,create_date,update_date,email,status,nickname FROM user
+2021-03-05 16:11:58.507 DEBUG 3556 --- [main] c.p.blog.mapper.UserMapper.selectList    : ==> Parameters: 
+2021-03-05 16:11:58.593 DEBUG 3556 --- [main] c.p.blog.mapper.UserMapper.selectList    : <==      Total: 17
+2021-03-05 16:37:56.462  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 16:37:56.464  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@5ac51b7]}
+2021-03-05 16:37:56.474  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 16:37:56.474  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 17:03:56.586  INFO 7808 --- [http-nio-8080-exec-7] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 17:03:56.586  INFO 7808 --- [http-nio-8080-exec-7] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@5ac51b7]}
+2021-03-05 17:03:56.587  INFO 7808 --- [http-nio-8080-exec-7] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 17:03:56.589  INFO 7808 --- [http-nio-8080-exec-7] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 17:04:04.268  INFO 7808 --- [http-nio-8080-exec-1] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 17:04:04.268  INFO 7808 --- [http-nio-8080-exec-1] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+2021-03-05 17:04:04.269  INFO 7808 --- [http-nio-8080-exec-1] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- main
+2021-03-05 17:04:04.269  INFO 7808 --- [http-nio-8080-exec-1] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 17:06:18.242  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 17:06:18.243 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 17:06:18.243  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 17:06:18.461  WARN 7808 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.personal.blog.mapper]' package. Please check your configuration.
+2021-03-05 17:06:18.689  WARN 7808 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+2021-03-05 17:06:18.707 ERROR 7808 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) [spring-boot-2.4.2.jar:2.4.2]
+	at com.personal.blog.BlogApplication.main(BlogApplication.java:13) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.4.2.jar:2.4.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 25 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:593) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:429) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:626) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:215) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9$$FastClassBySpringCGLIB$$c95c1734.invoke(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.3.jar:5.3.3]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.3.jar:5.3.3]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9.sqlSessionFactory(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 26 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:591) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119) ~[mybatis-3.5.6.jar:3.5.6]
+	... 41 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.6.jar:3.5.6]
+	... 45 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.6.jar:3.5.6]
+	... 47 common frames omitted
+
+2021-03-05 17:06:28.446  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 17:06:28.446 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 17:06:28.446  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 17:06:29.880  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:06:29.932  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:06:29.977  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:06:30.012  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:06:31.754  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 3.366 seconds (JVM running for 3466.877)
+2021-03-05 17:06:34.272  INFO 17744 --- [main] com.personal.blog.BlogApplicationTests   : Starting BlogApplicationTests using Java 1.8.0_131 on FUCK-YOU with PID 17744 (started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 17:06:34.273 DEBUG 17744 --- [main] com.personal.blog.BlogApplicationTests   : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 17:06:34.274  INFO 17744 --- [main] com.personal.blog.BlogApplicationTests   : No active profile set, falling back to default profiles: default
+2021-03-05 17:06:36.573  WARN 17744 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:06:36.636  WARN 17744 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:06:36.677  WARN 17744 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:06:36.721  WARN 17744 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:06:40.018  INFO 17744 --- [main] com.personal.blog.BlogApplicationTests   : Started BlogApplicationTests in 6.209 seconds (JVM running for 7.946)
+2021-03-05 17:06:41.183 DEBUG 17744 --- [main] c.p.blog.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,permission,avator,create_date,update_date,email,status,nickname FROM user
+2021-03-05 17:06:41.211 DEBUG 17744 --- [main] c.p.blog.mapper.UserMapper.selectList    : ==> Parameters: 
+2021-03-05 17:06:41.500 DEBUG 17744 --- [main] c.p.blog.mapper.UserMapper.selectList    : <==      Total: 17
+2021-03-05 17:44:22.333  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 17:44:22.337  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@269bd6f1]}
+2021-03-05 17:44:22.455  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 17:44:22.457  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 17:44:34.218  INFO 7808 --- [http-nio-8080-exec-3] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 17:44:34.219  INFO 7808 --- [http-nio-8080-exec-3] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+2021-03-05 17:44:34.220  INFO 7808 --- [http-nio-8080-exec-3] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- main
+2021-03-05 17:44:34.221  INFO 7808 --- [http-nio-8080-exec-3] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 17:45:52.011  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 17:45:52.011 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 17:45:52.012  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 17:45:52.609  WARN 7808 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.personal.blog.mapper]' package. Please check your configuration.
+2021-03-05 17:45:53.385  WARN 7808 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+2021-03-05 17:45:53.398 ERROR 7808 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) [spring-boot-2.4.2.jar:2.4.2]
+	at com.personal.blog.BlogApplication.main(BlogApplication.java:13) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.4.2.jar:2.4.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 25 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:593) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:429) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:626) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:215) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9$$FastClassBySpringCGLIB$$c95c1734.invoke(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.3.jar:5.3.3]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.3.jar:5.3.3]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9.sqlSessionFactory(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 26 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:591) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119) ~[mybatis-3.5.6.jar:3.5.6]
+	... 41 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.6.jar:3.5.6]
+	... 45 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.6.jar:3.5.6]
+	... 47 common frames omitted
+
+2021-03-05 17:46:00.275  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 17:46:00.277 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 17:46:00.277  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 17:46:01.387  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:01.606  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:01.737  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:01.802  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:03.475  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 3.32 seconds (JVM running for 5838.599)
+2021-03-05 17:46:19.029  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 17:46:19.030 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 17:46:19.030  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 17:46:19.469  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:19.485  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:19.500  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:19.525  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:20.993  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 2.105 seconds (JVM running for 5856.117)
+2021-03-05 17:46:21.543  INFO 3480 --- [main] com.personal.blog.BlogApplicationTests   : Starting BlogApplicationTests using Java 1.8.0_131 on FUCK-YOU with PID 3480 (started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 17:46:21.544 DEBUG 3480 --- [main] com.personal.blog.BlogApplicationTests   : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 17:46:21.545  INFO 3480 --- [main] com.personal.blog.BlogApplicationTests   : No active profile set, falling back to default profiles: default
+2021-03-05 17:46:23.336  WARN 3480 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:23.401  WARN 3480 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:23.446  WARN 3480 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:23.482  WARN 3480 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 17:46:26.784  INFO 3480 --- [main] com.personal.blog.BlogApplicationTests   : Started BlogApplicationTests in 5.613 seconds (JVM running for 6.831)
+2021-03-05 17:46:29.473 DEBUG 3480 --- [main] c.p.blog.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,permission,avator,create_date,update_date,email,status,nickname FROM user
+2021-03-05 17:46:29.505 DEBUG 3480 --- [main] c.p.blog.mapper.UserMapper.selectList    : ==> Parameters: 
+2021-03-05 17:46:29.772 DEBUG 3480 --- [main] c.p.blog.mapper.UserMapper.selectList    : <==      Total: 17
+2021-03-05 17:46:32.118  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 17:46:32.119  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@6608df7d]}
+2021-03-05 17:46:32.123  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 17:46:32.124  INFO 7808 --- [http-nio-8080-exec-10] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 17:47:28.994  INFO 7808 --- [http-nio-8080-exec-2] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 17:47:28.994  INFO 7808 --- [http-nio-8080-exec-2] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+2021-03-05 17:47:28.997  INFO 7808 --- [http-nio-8080-exec-2] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- main
+2021-03-05 17:47:28.998  INFO 7808 --- [http-nio-8080-exec-2] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 17:52:20.791  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 17:52:20.792  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+2021-03-05 17:52:20.792  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- main
+2021-03-05 17:52:20.793  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 18:15:13.193  INFO 7808 --- [http-nio-8080-exec-3] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 18:15:13.195  INFO 7808 --- [http-nio-8080-exec-3] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@79d15997]}
+2021-03-05 18:15:13.196  INFO 7808 --- [http-nio-8080-exec-3] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 18:15:13.196  INFO 7808 --- [http-nio-8080-exec-3] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 18:15:16.580  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 18:15:16.581  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+2021-03-05 18:15:16.581  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- main
+2021-03-05 18:15:16.582  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 19:00:10.536  INFO 7808 --- [http-nio-8080-exec-2] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 19:00:10.536  INFO 7808 --- [http-nio-8080-exec-2] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+2021-03-05 19:00:10.537  INFO 7808 --- [http-nio-8080-exec-2] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- main
+2021-03-05 19:00:10.537  INFO 7808 --- [http-nio-8080-exec-2] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 19:07:41.661  INFO 7808 --- [http-nio-8080-exec-6] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 19:07:41.661  INFO 7808 --- [http-nio-8080-exec-6] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@1b98fcaa]}
+2021-03-05 19:07:41.662  INFO 7808 --- [http-nio-8080-exec-6] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 19:07:41.663  INFO 7808 --- [http-nio-8080-exec-6] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 19:10:50.065  INFO 7808 --- [http-nio-8080-exec-8] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 19:10:50.065  INFO 7808 --- [http-nio-8080-exec-8] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@1b98fcaa]}
+2021-03-05 19:10:50.066  INFO 7808 --- [http-nio-8080-exec-8] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 19:10:50.069  INFO 7808 --- [http-nio-8080-exec-8] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 19:18:18.657  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : ---------- doBefore ----------
+2021-03-05 19:18:18.657  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : 请求体 ----- {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@1b98fcaa]}
+2021-03-05 19:18:18.657  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : 返回的内容 ----- index
+2021-03-05 19:18:18.658  INFO 7808 --- [http-nio-8080-exec-5] com.personal.blog.aspect.LogAspect       : ---------- doAfter ----------
+2021-03-05 19:39:32.073  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 19:39:32.074 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 19:39:32.074  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 19:39:32.851  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:39:32.940  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:39:32.981  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:39:33.102  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:39:34.456  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 2.413 seconds (JVM running for 12649.581)
+2021-03-05 19:39:37.198  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 19:39:37.198 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 19:39:37.438  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 19:39:39.002  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:39:39.026  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:39:39.236  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:39:39.292  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:39:41.042  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 3.958 seconds (JVM running for 12656.167)
+2021-03-05 19:53:16.038  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 19:53:16.038 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 19:53:16.038  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 19:53:16.454  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:53:16.468  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:53:16.488  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:53:16.515  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:53:17.863  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 1.849 seconds (JVM running for 13472.987)
+2021-03-05 19:53:37.530  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 19:53:37.531 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 19:53:37.531  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 19:53:37.908  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:53:37.926  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:53:37.954  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:53:37.969  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 19:53:39.131  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 1.623 seconds (JVM running for 13494.256)
+2021-03-05 20:12:35.267  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 20:12:35.268 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 20:12:35.268  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 20:12:36.380  WARN 7808 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.personal.blog.mapper]' package. Please check your configuration.
+2021-03-05 20:12:37.197  WARN 7808 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+2021-03-05 20:12:37.295 ERROR 7808 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) [spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) [spring-boot-2.4.2.jar:2.4.2]
+	at com.personal.blog.BlogApplication.main(BlogApplication.java:13) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.4.2.jar:2.4.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 25 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:593) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:429) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:626) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:215) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9$$FastClassBySpringCGLIB$$c95c1734.invoke(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.3.jar:5.3.3]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.3.jar:5.3.3]
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b21902c9.sqlSessionFactory(<generated>) ~[mybatis-plus-boot-starter-3.3.2.jar:3.3.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 26 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\Workbook\personalBlog\front\target\classes\mapper\BlogMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:591) ~[mybatis-plus-extension-3.3.2.jar:3.3.2]
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119) ~[mybatis-3.5.6.jar:3.5.6]
+	... 41 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.personal.blog.entity.Blog'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.6.jar:3.5.6]
+	... 45 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.personal.blog.entity.Blog
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.6.jar:3.5.6]
+	... 47 common frames omitted
+
+2021-03-05 20:12:41.027  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 20:12:41.027 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 20:12:41.027  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 20:12:41.924  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:12:42.113  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:12:42.128  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:12:42.232  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:12:44.381  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 3.375 seconds (JVM running for 14639.506)
+2021-03-05 20:13:09.773  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 20:13:09.773 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 20:13:09.774  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 20:13:10.183  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:13:10.202  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:13:10.225  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:13:10.275  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:13:11.852  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 2.103 seconds (JVM running for 14666.977)
+2021-03-05 20:13:12.019  INFO 18192 --- [main] com.personal.blog.BlogApplicationTests   : Starting BlogApplicationTests using Java 1.8.0_131 on FUCK-YOU with PID 18192 (started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 20:13:12.020 DEBUG 18192 --- [main] com.personal.blog.BlogApplicationTests   : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 20:13:12.021  INFO 18192 --- [main] com.personal.blog.BlogApplicationTests   : No active profile set, falling back to default profiles: default
+2021-03-05 20:13:14.290  WARN 18192 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:13:14.354  WARN 18192 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:13:14.392  WARN 18192 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:13:14.428  WARN 18192 --- [main] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:13:17.707  INFO 18192 --- [main] com.personal.blog.BlogApplicationTests   : Started BlogApplicationTests in 6.269 seconds (JVM running for 7.829)
+2021-03-05 20:13:19.228 DEBUG 18192 --- [main] c.p.blog.mapper.UserMapper.selectList    : ==>  Preparing: SELECT id,username,password,permission,avator,create_date,update_date,email,status,nickname FROM user
+2021-03-05 20:13:19.265 DEBUG 18192 --- [main] c.p.blog.mapper.UserMapper.selectList    : ==> Parameters: 
+2021-03-05 20:13:19.496 DEBUG 18192 --- [main] c.p.blog.mapper.UserMapper.selectList    : <==      Total: 17
+2021-03-05 20:27:08.042  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 20:27:08.042 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 20:27:08.043  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 20:27:08.511  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:27:08.543  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:27:08.560  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:27:08.579  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:27:10.327  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 2.308 seconds (JVM running for 15505.452)
+2021-03-05 20:33:27.172  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_131 on FUCK-YOU with PID 7808 (D:\Workspace\Workbook\personalBlog\front\target\classes started by 1056427550 in D:\Workspace\Workbook\personalBlog\front)
+2021-03-05 20:33:27.172 DEBUG 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-05 20:33:27.172  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2021-03-05 20:33:27.716  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.BlogMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:33:27.738  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CategoryMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:33:27.751  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.CommentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:33:27.782  WARN 7808 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.personal.blog.mapper.UserMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2021-03-05 20:33:28.822  INFO 7808 --- [restartedMain] com.personal.blog.BlogApplication        : Started BlogApplication in 1.674 seconds (JVM running for 15883.947)

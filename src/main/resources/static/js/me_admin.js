@@ -575,6 +575,18 @@ layui.use('table', function () {
             setTimeout(function () {
                 window.location.href = "http://47.119.131.193/blog/input"
             }, 500)
+        }else {
+            layer.confirm('真的删除博客名 ' + data.title + ' 吗', function (index) {
+                $.get("http://47.119.131.193/blog/admin/delBlog?id="+data.id,function (res) {
+                    if (res.code == 200){
+                        obj.del();
+                        cocoMessage.success("删除成功!",2000);
+                    }else {
+                        cocoMessage.error("删除失败!",0);
+                    }
+                    layer.close(index)
+                })
+            });
         }
     })
 });

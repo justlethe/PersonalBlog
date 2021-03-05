@@ -90,3 +90,7 @@ function uploadBlog(published, blogData) {
         }
     });
 }
+
+function updateImg(element) {
+    $('#blogImg').attr("src",$(element).val()+"/505/295")
+}

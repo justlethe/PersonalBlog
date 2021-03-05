@@ -158,6 +158,11 @@ public class BlogController {
         blog.setTitle(blogData.getString("title"));
         blog.setDescription(blogData.getString("description"));
         blog.setContent(blogData.getString("md-content-html-code"));
+        if (blogData.getString("imgUrl").equals("")){
+            blog.setPicture("https://picsum.photos/id/1");
+        }else {
+            blog.setPicture(blogData.getString("imgUrl"));
+        }
         blog.setMdcontent(blogData.getString("content"));
         blog.setType(blogData.getString("type"));
         blog.setCategory(blogData.getString("category"));
@@ -229,5 +234,22 @@ public class BlogController {
         return Msg.success().add("blogs",blogs);
     }
 
+    /**
+     * 删除博客
+     **/
+    @GetMapping("/admin/delBlog")
+    @ResponseBody
+    public Msg delBlog(HttpServletRequest request){
+
+        int id = Integer.parseInt(request.getParameter("id"));
+
+        try {
+            blogMapper.deleteByPrimaryKey(id);
+            return Msg.success();
+        }catch (Exception e){
+            return Msg.fail();
+        }
+
+    }
 
 }

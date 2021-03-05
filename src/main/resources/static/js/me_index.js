@@ -42,7 +42,7 @@ function initialBlog(category) {
                                     "                                </a>\n" +
                                     "                                <a class=\"sixteen wide column ui header\" target=\"_blank\" onclick=\"goBlog(this)\">" + blog.title + "</a>\n" +
                                     "                                <a class=\"six wide column\"  target=\"_blank\" onclick=\"goBlog(this)\">\n" +
-                                    "                                    <img src=\"https://picsum.photos/id/1/300/200\" alt=\"\" class=\"ui rounded image\">\n" +
+                                    "                                    <img src=\""+blog.picture+"/300/200\" alt=\"\" class=\"ui rounded image\">\n" +
                                     "                                </a>\n" +
                                     "                                <p class=\"ten wide column text-spacing\">" + blog.description + "</p>\n" +
                                     "                                <div class=\"ui mobile stackable sixteen wide column\">\n" +
@@ -51,7 +51,7 @@ function initialBlog(category) {
                                     "                                        <i class=\"eye icon\" style=\"margin-left: 1em\"></i> " + blog.views + "\n" +
                                     "                                        <div style=\"float:right;\">\n"
                                 for (let i = 0; i < categoryArray.length; i++) {
-                                    li += "                                            <a class=\"type\" onclick=\"reloadBlog(this)\" style=\"margin-left: 1em\">\n" +
+                                    li += "                                            <a class=\"type\" onclick=\"tabReloadBlog(this)\" style=\"margin-left: 1em\">\n" +
                                         "                                                <i class=\"tags icon\"></i>" + categoryArray[i] + "\n" +
                                         "                                            </a>\n"
                                 }
@@ -67,7 +67,7 @@ function initialBlog(category) {
                                     "                                style=\"padding: 5px !important;\">\n" +
                                     "                                <a class=\"sixteen wide column ui header\" target=\"_blank\" onclick=\"goBlog(this)\">" + blog.title + "</a>\n" +
                                     "                                <a class=\"six wide column\"  target=\"_blank\" onclick=\"goBlog(this)\">\n" +
-                                    "                                    <img src=\"https://picsum.photos/id/1/300/200\" alt=\"\" class=\"ui rounded image\">\n" +
+                                    "                                    <img src=\""+blog.picture+"/300/200\" alt=\"\" class=\"ui rounded image\">\n" +
                                     "                                </a>\n" +
                                     "                                <p class=\"ten wide column text-spacing\">" + blog.description + "</p>\n" +
                                     "                                <div class=\"ui mobile stackable sixteen wide column\">\n" +
@@ -76,7 +76,7 @@ function initialBlog(category) {
                                     "                                        <i class=\"eye icon\" style=\"margin-left: 1em\"></i> " + blog.views + "\n" +
                                     "                                        <div style=\"float:right;\">\n"
                                 for (let i = 0; i < categoryArray.length; i++) {
-                                    li += "                                            <a class=\"type\" onclick=\"reloadBlog(this)\" style=\"margin-left: 1em\">\n" +
+                                    li += "                                            <a class=\"type\" onclick=\"tabReloadBlog(this)\" style=\"margin-left: 1em\">\n" +
                                         "                                                <i class=\"tags icon\"></i>" + categoryArray[i] + "\n" +
                                         "                                            </a>\n"
                                 }
@@ -154,6 +154,19 @@ function hotToBlog(element) {
 function reloadBlog(element) {
     // 获取筛选的分类
     let category = $(element).children('.category').text();
+    if (category != "全部文章") sessionStorage.setItem("curCategory", category);
+    else sessionStorage.removeItem("curCategory");
+    sessionStorage.removeItem("search")
+    console.log(category)
+    location.reload();
+}
+
+// 根据标签筛选当前博客
+function tabReloadBlog(element) {
+    // 获取筛选的分类
+
+    let category = $(element).textContent.trim();
+    console.log(category)
     if (category != "全部文章") sessionStorage.setItem("curCategory", category);
     else sessionStorage.removeItem("curCategory");
     sessionStorage.removeItem("search")

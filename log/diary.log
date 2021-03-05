@@ -3702,3 +3702,37 @@ Thu Mar 04 23:23:20 CST 2021{url='http://localhost:8080/main', ip='0:0:0:0:0:0:0
 Thu Mar 04 23:23:20 CST 2021main
 Thu Mar 04 23:23:25 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@ae76b52]}
 Thu Mar 04 23:23:25 CST 2021index
+Fri Mar 05 16:09:26 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@417d3595]}
+Fri Mar 05 16:09:26 CST 2021index
+Fri Mar 05 16:09:40 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@417d3595]}
+Fri Mar 05 16:09:40 CST 2021index
+Fri Mar 05 16:09:47 CST 2021{url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+Fri Mar 05 16:09:47 CST 2021main
+Fri Mar 05 16:37:56 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@5ac51b7]}
+Fri Mar 05 16:37:56 CST 2021index
+Fri Mar 05 17:03:56 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@5ac51b7]}
+Fri Mar 05 17:03:56 CST 2021index
+Fri Mar 05 17:04:04 CST 2021{url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+Fri Mar 05 17:04:04 CST 2021main
+Fri Mar 05 17:44:22 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@269bd6f1]}
+Fri Mar 05 17:44:22 CST 2021index
+Fri Mar 05 17:44:34 CST 2021{url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+Fri Mar 05 17:44:34 CST 2021main
+Fri Mar 05 17:46:32 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@6608df7d]}
+Fri Mar 05 17:46:32 CST 2021index
+Fri Mar 05 17:47:28 CST 2021{url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+Fri Mar 05 17:47:28 CST 2021main
+Fri Mar 05 17:52:20 CST 2021{url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+Fri Mar 05 17:52:20 CST 2021main
+Fri Mar 05 18:15:13 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@79d15997]}
+Fri Mar 05 18:15:13 CST 2021index
+Fri Mar 05 18:15:16 CST 2021{url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+Fri Mar 05 18:15:16 CST 2021main
+Fri Mar 05 19:00:10 CST 2021{url='http://localhost:8080/main', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.main', args=[]}
+Fri Mar 05 19:00:10 CST 2021main
+Fri Mar 05 19:07:41 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@1b98fcaa]}
+Fri Mar 05 19:07:41 CST 2021index
+Fri Mar 05 19:10:50 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@1b98fcaa]}
+Fri Mar 05 19:10:50 CST 2021index
+Fri Mar 05 19:18:18 CST 2021{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[org.apache.catalina.session.StandardSessionFacade@1b98fcaa]}
+Fri Mar 05 19:18:18 CST 2021index
