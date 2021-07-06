@@ -14,7 +14,7 @@ function initialBlog(category) {
             , isAuto: true
             , done: function (page, next) { //到达临界点（默认滚动触发），触发下一页
                 let lis = [], search = "";
-                let url = 'http://47.119.131.193/blog/admin/getBlogs?page=' + page + '&limit=5';
+                let url = 'http://meiko2021.net.cn/blog/admin/getBlogs?page=' + page + '&limit=5';
                 if (category != null) {
                     url += "&category=" + category;
                 }
@@ -106,7 +106,7 @@ function initialBlog(category) {
 
 // 初始化首页分类列表函数
 function initialCategory() {
-    $.get('http://47.119.131.193/blog/admin/getCategories', function (res) {
+    $.get('http://meiko2021.net.cn/blog/admin/getCategories', function (res) {
         let category = res.data.categories;
         // console.log(category)
         for (let i = 0; i < category.length; i++) {
@@ -124,7 +124,7 @@ function initialCategory() {
 
 // 初始化热门文章列表
 function initialHotBlog() {
-    $.get('http://47.119.131.193/blog/admin/getHotBlogs', function (res) {
+    $.get('http://meiko2021.net.cn/blog/admin/getHotBlogs', function (res) {
         let data = res.data.blogs;
         console.log(data);
         for (let i = 0; i < data.length; i++) {
@@ -141,13 +141,13 @@ function goBlog(element) {
     console.log($(element).parent().find("a.ui.header").text())
     sessionStorage.removeItem("search")
     sessionStorage.setItem("blogTitle", $(element).parent().find("a.ui.header").text())
-    window.open("http://47.119.131.193/blog/blog")
+    window.open("http://meiko2021.net.cn/blog/blog")
 }
 
 // 热门文章跳转博客详情页
 function hotToBlog(element) {
     sessionStorage.setItem("blogTitle", $(element).text())
-    window.open("http://47.119.131.193/blog/blog")
+    window.open("http://meiko2021.net.cn/blog/blog")
 }
 
 // 根据分类筛选当前博客
@@ -165,7 +165,7 @@ function reloadBlog(element) {
 function tabReloadBlog(element) {
     // 获取筛选的分类
 
-    let category = $(element).textContent.trim();
+    let category = $(element).text().trim();
     console.log(category)
     if (category != "全部文章") sessionStorage.setItem("curCategory", category);
     else sessionStorage.removeItem("curCategory");

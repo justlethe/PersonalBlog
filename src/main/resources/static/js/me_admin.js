@@ -14,7 +14,7 @@ layui.use('table', function () {
 
     table.render({
         elem: '#user_table',
-        url: 'http://47.119.131.193/blog/admin/getUsers',
+        url: 'http://meiko2021.net.cn/blog/admin/getUsers',
         cellMinWidth: 70, //全局定义常规单元格的最小宽度，layui 2.2.1 新增
 
         toolbar: '#toolbarDemo',
@@ -90,7 +90,7 @@ layui.use('table', function () {
                 }
                 layer.confirm('确认删除用户' + username + '吗?', function (index) {
                     table.reload('user_table', {
-                        url: 'http://47.119.131.193/blog/admin/delUser',
+                        url: 'http://meiko2021.net.cn/blog/admin/delUser',
                         method: 'post',
                         where: {
                             username: JSON.stringify(username)
@@ -111,7 +111,7 @@ layui.use('table', function () {
             layer.confirm('真的删除用户名为' + data.username + '的用户吗', function (index) {
                 obj.del();
                 table.reload('user_table', {
-                    url: 'http://47.119.131.193/blog/admin/delUser',
+                    url: 'http://meiko2021.net.cn/blog/admin/delUser',
                     method: 'post',
                     where: {
                         username: data.username
@@ -138,7 +138,7 @@ layui.use('table', function () {
                     closable: false,
                     onApprove: function () {
                         table.reload('user_table', {
-                            url: 'http://47.119.131.193/blog/admin/updateUser',
+                            url: 'http://meiko2021.net.cn/blog/admin/updateUser',
                             method: 'post',
                             where: {
                                 username: $('span.username').text(),
@@ -164,7 +164,7 @@ layui.use('form', function () {
         sessionStorage.setItem("showLogoutUser", data.elem.checked);
         let table = layui.table;
         table.reload('user_table', {
-            url: 'http://47.119.131.193/blog/admin/getUsers',
+            url: 'http://meiko2021.net.cn/blog/admin/getUsers',
             method: 'post',
             where: {
                 showFlag: data.elem.checked
@@ -224,7 +224,7 @@ $('.ui.form.create_user').form({
 
         $.ajax({
             type: 'post', // 提交方式 get/post
-            url: 'http://47.119.131.193/blog/admin/addUsers', // 需要提交的 url
+            url: 'http://meiko2021.net.cn/blog/admin/addUsers', // 需要提交的 url
             data: {
                 user: JSON.stringify($(this).form('get values'))
             },
@@ -241,7 +241,7 @@ $('.ui.form.create_user').form({
                     $('.ui.create_user.modal').modal('hide');
                     let table = layui.table;
                     table.reload('usertable', {
-                        url: 'http://47.119.131.193/blog/admin/getUsers',
+                        url: 'http://meiko2021.net.cn/blog/admin/getUsers',
                         method: 'post',
                         where: {
                             showFlag: sessionStorage.getItem("showLogoutUser")
@@ -280,7 +280,7 @@ layui.use('table', function () {
 
     table.render({
         elem: '#category_table',
-        url: 'http://47.119.131.193/blog/admin/getCategories',
+        url: 'http://meiko2021.net.cn/blog/admin/getCategories',
         cellMinWidth: 70, //全局定义常规单元格的最小宽度，layui 2.2.1 新增
 
         toolbar: '#category_toolbar',
@@ -343,7 +343,7 @@ layui.use('table', function () {
                                 cocoMessage.warning("类别名不可为空", 0)
                             } else {
                                 $.ajax({
-                                    url: "http://47.119.131.193/blog/admin/addCategory",
+                                    url: "http://meiko2021.net.cn/blog/admin/addCategory",
                                     type: 'post',
                                     data: {
                                         name: name
@@ -375,7 +375,7 @@ layui.use('table', function () {
                 }
                 layer.confirm('确认删除分类 ' + categoryName + ' 吗?', function (index) {
                     $.ajax({
-                        url: 'http://47.119.131.193/blog/admin/delCategory',
+                        url: 'http://meiko2021.net.cn/blog/admin/delCategory',
                         type: 'post',
                         data: {
                             category: JSON.stringify(categoryName)
@@ -406,7 +406,7 @@ layui.use('table', function () {
             layer.confirm('真的删除类别名为' + data.categoryName + '的分类吗', function (index) {
                 obj.del();
                 $.ajax({
-                    url: 'http://47.119.131.193/blog/admin/delCategory',
+                    url: 'http://meiko2021.net.cn/blog/admin/delCategory',
                     type: 'post',
                     data: {
                         category: data.categoryName
@@ -473,7 +473,7 @@ layui.use('table', function () {
                     });
 
                     $.ajax({
-                        url: "http://47.119.131.193/blog/admin/updateBlogsCategory",
+                        url: "http://meiko2021.net.cn/blog/admin/updateBlogsCategory",
                         type: 'post',
                         data: {
                             changeCategory: changeCategory,
@@ -502,7 +502,7 @@ layui.use('table', function () {
 
     table.render({
         elem: '#blog_table',
-        url: 'http://47.119.131.193/blog/admin/getBlogs',
+        url: 'http://meiko2021.net.cn/blog/admin/getBlogs',
         toolbar: '#blog_toolbar',
         cols: [[
             {field: 'blogid', width: 50, title: '序号', type: 'numbers'},
@@ -558,7 +558,7 @@ layui.use('table', function () {
         switch (obj.event) {
             case 'addNewBlog':
                 sessionStorage.setItem("editBlogFlag", "")
-                window.location.href = "http://47.119.131.193/blog/input"
+                window.location.href = "http://meiko2021.net.cn/blog/input"
                 break;
         }
         ;
@@ -573,11 +573,11 @@ layui.use('table', function () {
             sessionStorage.setItem("editBlogFlag", "true");
             sessionStorage.setItem("editBlogTitle", data.title);
             setTimeout(function () {
-                window.location.href = "http://47.119.131.193/blog/input"
+                window.location.href = "http://meiko2021.net.cn/blog/input"
             }, 500)
         }else {
             layer.confirm('真的删除博客名 ' + data.title + ' 吗', function (index) {
-                $.get("http://47.119.131.193/blog/admin/delBlog?id="+data.id,function (res) {
+                $.get("http://meiko2021.net.cn/blog/admin/delBlog?id="+data.id,function (res) {
                     if (res.code == 200){
                         obj.del();
                         cocoMessage.success("删除成功!",2000);
@@ -597,7 +597,7 @@ layui.use(['jquery', 'table', 'code', 'tableFilter'], function () {
     var tableData;
     layui.table.render({
         elem: '#comment_table',
-        url: 'http://47.119.131.193/blog/admin/getAllComments',
+        url: 'http://meiko2021.net.cn/blog/admin/getAllComments',
         cols: [[
             {field: 'commentid', width: 50, title: '序号', type: 'numbers'},
             {field: 'blogTitle', width: 210, title: '相关标题'},
@@ -647,7 +647,7 @@ layui.use(['jquery', 'table', 'code', 'tableFilter'], function () {
         let index = obj.othis.parents('tr').attr("data-index");
         console.log(index)
         console.log(tableData[index])
-        $.post('http://47.119.131.193/blog/admin/changeCommentStatus?status='+obj.elem.checked
+        $.post('http://meiko2021.net.cn/blog/admin/changeCommentStatus?status='+obj.elem.checked
             +"&id="+tableData[index].id,function (res) {
 
         })
@@ -660,7 +660,7 @@ layui.use(['jquery', 'table', 'code', 'tableFilter'], function () {
 
         if (obj.event === 'del') {
             layer.confirm('是否确认删除',function (index){
-                $.post('http://47.119.131.193/blog/admin/delComment?id='+data.id,function (res) {
+                $.post('http://meiko2021.net.cn/blog/admin/delComment?id='+data.id,function (res) {
                     if (res.code==200){
                         obj.del();
                         cocoMessage.success("删除成功!",2000)

@@ -1,3 +1,5 @@
+web:
+  upload-path: C:/project/blogPicture
 
 spring:
   thymeleaf:
@@ -9,10 +11,18 @@ spring:
     password: 123456
   mvc:
     static-path-pattern: /**
+  web:
+    resources:
+      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
 
 # pageHelper
 pagehelper:
   helper-dialect: mysql
+
+qq:
+  oauth:
+    http: http://meiko2021.net.cn/blog/loginByQQ
+
 
 #mybatis
 #mybatis-plus:

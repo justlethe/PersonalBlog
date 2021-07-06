@@ -4,13 +4,13 @@ $(function () {
 
 // 初始化该文章对应的留言列表
 function initialBlogComment() {
-    $.post('http://47.119.131.193/blog/admin/getBlogComments',function (res) {
+    $.post('http://meiko2021.net.cn/blog/admin/getBlogComments',function (res) {
         let data = res.data.comments;
 
         for (let i=0;i<data.length;i++){
             let lis = "";
             lis = "<div class=\"comment\"> \n" +
-                "   <a class=\"avatar\"> <img src=\"/images/matt.jpg\" /> </a> \n" +
+                "   <a class=\"avatar\"> <img src=\""+data[i].imgUrl+"\" /> </a> \n" +
                 "   <div class=\"content\"> \n" +
                 "    <a class=\"author\">"+data[i].userName+"</a> \n" +
                 "    <div class=\"metadata\"> \n" +
@@ -29,7 +29,7 @@ function initialBlogComment() {
                 let list = data[i].commentList;
                 for (let j=0;j<list.length;j++){
                     lis += "<div class=\"comment\"> \n" +
-                        "   <a class=\"avatar\"> <img src=\"/images/matt.jpg\" /> </a> \n" +
+                        "   <a class=\"avatar\"> <img src=\""+list[i].imgUrl+"\" /> </a> \n" +
                         "   <div class=\"content\"> \n" +
                         "    <a class=\"author\">"+list[j].userName+"</a><span> 回复 </span><b>"+list[i].replyUser+"</b> \n" +
                         "    <div class=\"metadata\"> \n" +
@@ -70,11 +70,11 @@ function submitComment(element) {
         console.log(relatedId)
     }
     $.ajax({
-        url: 'http://47.119.131.193/blog/admin/saveBlogComments',
+        url: 'http://meiko2021.net.cn/blog/admin/saveBlogComments',
         type: 'post',
         data: {
             blogTitle: null,
-            userName: JSON.parse(sessionStorage.getItem("user")).username,
+            userName: JSON.parse(sessionStorage.getItem("user")).nickname,
             content: $(element).prev().children().val(),
             replyUser: replyUser,
             relatedId: relatedId
@@ -88,4 +88,17 @@ function submitComment(element) {
             }
         }
     })
+}
+
+// 弹出回复框
+function popReplyForm(element) {
+    $("#replyForm").remove();
+    $(element).parent().append("<form id=\"replyForm\" class=\"ui reply form animate__animated animate__flipInX\">\n" +
+        "            <div class=\"field\">\n" +
+        "              <textarea placeholder='请输入回复信息' autofocus></textarea>\n" +
+        "            </div>\n" +
+        "            <div class=\"ui primary submit labeled icon button\" onclick=\"submitComment(this)\">\n" +
+        "              <i class=\"icon edit\"></i> 回复\n" +
+        "            </div>\n" +
+        "          </form>")
 }

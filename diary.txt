@@ -1,1 +1,1 @@
-Fri Jan 22 00:50:35 CST 2021{url='http://47.119.131.193/blog/3/meiko', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[3, meiko]}
+Fri Jan 22 00:50:35 CST 2021{url='http://meiko2021.net.cn/blog/3/meiko', ip='0:0:0:0:0:0:0:1', classMethod='com.personal.blog.web.IndexController.index', args=[3, meiko]}

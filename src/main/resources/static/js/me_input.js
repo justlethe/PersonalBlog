@@ -21,7 +21,7 @@ layui.use('form', function () {
 
     $.ajax({
         type: "get",
-        url: "http://47.119.131.193/blog/admin/getCategory",
+        url: "http://meiko2021.net.cn/blog/admin/getCategory",
         success: function (data) {
             let list = data.data.category;
             select.update({
@@ -32,13 +32,14 @@ layui.use('form', function () {
 
     if (sessionStorage.getItem("editBlogFlag") == "true") {
         $.ajax({
-            url: 'http://47.119.131.193/blog/admin/getBlog',
+            url: 'http://meiko2021.net.cn/blog/admin/getBlog',
             type: 'post',
             data: {
                 title: sessionStorage.getItem("editBlogTitle")
             },
             success: function (res) {
                 console.log(res)
+                sessionStorage.setItem("editBlogId",res.data.blog.id)
                 layui.form.val('blog', {
                     "title": res.data.blog.title // "name": "value"
                     , "type": res.data.blog.type
@@ -48,7 +49,7 @@ layui.use('form', function () {
                 let categoryList = res.data.blog.category.trim().split(',');
                 // console.log(categoryList);
                 select.setValue(categoryList)
-                $("textarea[name='content']").val(res.data.blog.mdcontent)
+                $(".editormd-markdown-textarea").text(res.data.blog.mdcontent)
             },
         })
     }
@@ -71,18 +72,19 @@ function uploadBlog(published, blogData) {
     console.log(sessionStorage.getItem("editBlogFlag"))
     $.ajax({
         type: "post",
-        url: "http://47.119.131.193/blog/admin/saveBlog",
+        url: "http://meiko2021.net.cn/blog/admin/saveBlog",
         data: {
             blogData: JSON.stringify(blogData),
             published: published,
-            updateFlag: sessionStorage.getItem("editBlogFlag")
+            updateFlag: sessionStorage.getItem("editBlogFlag"),
+            blogId:sessionStorage.getItem("editBlogId")
         },
         success: function (data) {
             sessionStorage.setItem("editBlogFlag","");
             if (data.code == 200) {
                 cocoMessage.success("发布成功,3秒后将返回管理页面", 3000);
                 setTimeout(function () {
-                    window.location.href = "http://47.119.131.193/blog/admin"
+                    window.location.href = "http://meiko2021.net.cn/blog/admin"
                 }, 3000)
             } else {
                 cocoMessage.error(data.data.errorMsg, 3000)

@@ -18,6 +18,7 @@ $(function () {
         // 将登录按钮hide，头像show
         $(".login.before").addClass("hide");
         $(".login.after").removeClass("hide");
+        $('.login img').attr('src',JSON.parse(sessionStorage.getItem("user")).avator)
         if (sessionStorage.getItem("permission") == "true") {
             $("a.admin.button").parent().removeClass("hide")
         }
@@ -35,10 +36,11 @@ function logOut() {
     sessionStorage.removeItem("code");
     sessionStorage.removeItem("permission");
     sessionStorage.removeItem("user");
+    sessionStorage.removeItem("verify");
 
     $.ajax({
         type: 'get', // 提交方式 get/post
-        url: 'http://47.119.131.193/blog/logout', // 需要提交的 url
+        url: 'http://meiko2021.net.cn/blog/logout', // 需要提交的 url
     });
 
     location.reload();
@@ -79,7 +81,7 @@ $('.ui.form.login').form({
 
         $.ajax({
             type: 'post', // 提交方式 get/post
-            url: 'http://47.119.131.193/blog/login', // 需要提交的 url
+            url: 'http://meiko2021.net.cn/blog/login', // 需要提交的 url
             data: {
                 'username': $('.login.form').form('get value', 'username'),
                 'password': $('.login.form').form('get value', 'password'),
@@ -117,6 +119,7 @@ $('.ui.form.login').form({
         });
     }
 });
+
 
 // 注册页面的表单验证
 $('.ui.form.register').form({
@@ -157,7 +160,7 @@ $('.ui.form.register').form({
         event.preventDefault();
         $.ajax({
             type: 'post', // 提交方式 get/post
-            url: 'http://47.119.131.193/blog/register', // 需要提交的 url
+            url: 'http://meiko2021.net.cn/blog/register', // 需要提交的 url
             data: {
                 'username': $('.register.form').form('get value', 'username'),
                 'password1': $('.register.form').form('get value', 'password-1'),

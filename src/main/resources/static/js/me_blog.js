@@ -6,7 +6,7 @@ $(function () {
 
 // 初始化博客文章函数
 function initialBlog() {
-    $.post('http://47.119.131.193/blog/admin/getBlog?title='+sessionStorage.getItem("blogTitle")+"&addView=true",function (res) {
+    $.post('http://meiko2021.net.cn/blog/admin/getBlog?title='+sessionStorage.getItem("blogTitle")+"&addView=true",function (res) {
         let blog = res.data.blog;
         // console.log(blog);
         blogTitle = blog.title;
@@ -34,13 +34,13 @@ function initialBlog() {
 // 初始化该文章对应的留言列表
 function initialBlogComment(title) {
     console.log("查找留言列表的博客id为"+title)
-    $.post('http://47.119.131.193/blog/admin/getBlogComments?blogTitle='+title,function (res) {
+    $.post('http://meiko2021.net.cn/blog/admin/getBlogComments?blogTitle='+title,function (res) {
         let data = res.data.comments;
         // console.log(data)
         for (let i=0;i<data.length;i++){
             let lis = "";
             lis = "<div class=\"comment\"> \n" +
-                "   <a class=\"avatar\"> <img src=\"/images/matt.jpg\" /> </a> \n" +
+                "   <a class=\"avatar\"> <img src=\""+data[i].imgUrl+"\" /> </a> \n" +
                 "   <div class=\"content\"> \n" +
                 "    <a class=\"author\">"+data[i].userName+"</a> \n" +
                 "    <div class=\"metadata\"> \n" +
@@ -59,9 +59,9 @@ function initialBlogComment(title) {
                 let list = data[i].commentList;
                 for (let j=0;j<list.length;j++){
                     lis += "<div class=\"comment\"> \n" +
-                        "   <a class=\"avatar\"> <img src=\"/images/avatar/small/jenny.jpg\" /> </a> \n" +
+                        "   <a class=\"avatar\"> <img src=\""+list[i].imgUrl+"\" /> </a> \n" +
                         "   <div class=\"content\"> \n" +
-                        "    <a class=\"author\">"+list[j].userName+"</a><span> 回复 </span><b>"+list[i].replyUser+"</b> \n" +
+                        "    <a class=\"author\">"+list[i].userName+"</a><span> 回复 </span><b>"+list[i].replyUser+"</b> \n" +
                         "    <div class=\"metadata\"> \n" +
                         "     <span class=\"date\">"+list[i].createDate.substring(0,19).replace("T","  ")+"</span> \n" +
                         "    </div> \n" +
@@ -100,11 +100,11 @@ function submitComment(element) {
         console.log(relatedId)
     }
     $.ajax({
-        url: 'http://47.119.131.193/blog/admin/saveBlogComments',
+        url: 'http://meiko2021.net.cn/blog/admin/saveBlogComments',
         type: 'post',
         data: {
             blogTitle: blogTitle,
-            userName: JSON.parse(sessionStorage.getItem("user")).username,
+            userName: JSON.parse(sessionStorage.getItem("user")).nickname,
             content: $(element).prev().children().val(),
             replyUser: replyUser,
             relatedId: relatedId

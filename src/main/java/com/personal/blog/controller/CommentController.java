@@ -13,8 +13,10 @@ package com.personal.blog.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.personal.blog.entity.Comment;
 import com.personal.blog.entity.Msg;
+import com.personal.blog.entity.User;
 import com.personal.blog.mapper.BlogMapper;
 import com.personal.blog.mapper.CommentMapper;
+import com.personal.blog.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -42,6 +44,8 @@ public class CommentController {
     private CommentMapper commentMapper;
     @Autowired
     private BlogMapper blogMapper;
+    @Autowired
+    private UserMapper userMapper;
 
     /**
      * 获取博客留言
@@ -68,10 +72,28 @@ public class CommentController {
             wrapper.clear();
             wrapper.eq("related_id",comment.getId());
             List<Comment> comments1=commentMapper.selectList(wrapper);
+            comments1 = addAvator(comments1);
             comment.setCommentList(comments1);
         }
+        comments = addAvator(comments);
 
         return Msg.success().add("comments",comments);
+    }
+
+    private List<Comment> addAvator(List<Comment> comments){
+
+        try{
+            for (Comment comment : comments) {
+                QueryWrapper<User> wrapper1 = new QueryWrapper<>();
+                wrapper1.eq("nickname",comment.getUserName());
+                User user = userMapper.selectOne(wrapper1);
+                comment.setImgUrl(user.getAvator());
+            }
+        }catch (Exception e){
+
+        }
+
+        return comments;
     }
 
     /**
@@ -111,7 +133,7 @@ public class CommentController {
             System.out.println(e);
         }
 
-        Comment comment = new Comment(null,blogTitle,userName,content,new Date(),replyUser,false,relatedId,null);
+        Comment comment = new Comment(null,blogTitle,userName,content,new Date(),replyUser,false,relatedId,null,null);
         System.out.println(comment);
 
         try{

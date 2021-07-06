@@ -2,7 +2,7 @@
 if (sessionStorage.getItem("verify") == null) {
     $.ajax({
         type: 'get', // 提交方式 get/post
-        url: 'http://47.119.131.193/blog/autoLogin', // 需要提交的 url
+        url: 'http://meiko2021.net.cn/blog/autoLogin', // 需要提交的 url
 
         success: function(data) {
             if (data.code == 200) {

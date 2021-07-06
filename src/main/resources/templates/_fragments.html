@@ -10,15 +10,15 @@
 
         <th:block th:fragment="menu(n)">
             <img src="../static/images/logo.png" th:src="@{images/logo.png}" alt="" class="item logo">
-            <a href="http://47.119.131.193/blog/" class="item menu-item mobile-hide" th:classappend="${n==1} ? 'active'">
+            <a href="http://meiko2021.net.cn/blog/" class="item menu-item mobile-hide" th:classappend="${n==1} ? 'active'">
                 <i class="home icon"></i>首页</a>
-            <a href="http://47.119.131.193/blog/main" class="item menu-item mobile-hide" th:classappend="${n==2} ? 'active'">
+            <a href="http://meiko2021.net.cn/blog/main" class="item menu-item mobile-hide" th:classappend="${n==2} ? 'active'">
                 <i class="file alternate icon"></i>博客</a>
-            <a href="http://47.119.131.193/blog/comments" class="item menu-item mobile-hide" th:classappend="${n==3} ? 'active'">
+            <a href="http://meiko2021.net.cn/blog/comments" class="item menu-item mobile-hide" th:classappend="${n==3} ? 'active'">
                 <i class="comment alternate icon"></i>留言</a>
-            <a href="http://47.119.131.193/blog/timeline" class="item menu-item mobile-hide" th:classappend="${n==5} ? 'active'">
-                <i class="calendar alternate icon"></i>归档</a>
-            <a href="http://47.119.131.193/blog/about" class="item menu-item mobile-hide" th:classappend="${n==4} ? 'active'">
+<!--            <a href="http://meiko2021.net.cn/blog/timeline" class="item menu-item mobile-hide" th:classappend="${n==5} ? 'active'">-->
+<!--                <i class="calendar alternate icon"></i>归档</a>-->
+            <a href="http://meiko2021.net.cn/blog/about" class="item menu-item mobile-hide" th:classappend="${n==4} ? 'active'">
                 <i class="info icon"></i>关于</a>
 
 
@@ -60,6 +60,12 @@
                                 </div>
                             </div>
                             <button type="button" class="ui fluid large teal login submit button">登录</button>
+                            <div class="ui divider"></div>
+                            <div class="field" style="text-align: center">
+                                <a id="qqLogin" title="QQ登录" href="/blog/qq/oauth">
+                                    <i class="big teal qq icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -98,16 +104,16 @@
                 <div class="ui middle aligned list">
                     <!-- 管理员功能 -->
                     <div class="item hide">
-                        <a class="ui teal admin button" href="http://47.119.131.193/blog/admin">
+                        <a class="ui teal admin button" href="http://meiko2021.net.cn/blog/admin">
                             管理博客
                         </a>
                     </div>
                     <!-- 普通功能 -->
-                    <div class="item">
-                        <a class="ui teal data button">
-                            个人资料
-                        </a>
-                    </div>
+<!--                    <div class="item">-->
+<!--                        <a class="ui teal data button">-->
+<!--                            个人资料-->
+<!--                        </a>-->
+<!--                    </div>-->
                     <div class="item">
                         <div class="ui teal logout button" onclick="logOut()">
                             退出登录
@@ -128,7 +134,7 @@
                     <a class="item" title="github: justlethe" target="_blank" href="https://github.com/justlethe"><i class="github large icon"></i></a>
                 </div>
                 <div class="ui divider" style="margin: 0px"></div>
-                <p style="text-align: center;">Copyright © 2020-2021 Meiko 丨 All Rights Reserved V.1.0.0</p>
+                <p style="text-align: center;">Copyright © 2020-2021 Meiko 丨 备案信息：<a>粤ICP备2021031842号</a></p>
             </footer>
         </th:block>
 

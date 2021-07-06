@@ -41,12 +41,6 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(HttpSession session){
-        //int i = 9/0;
-        //String blog = null;
-        //if (blog == null){
-        //    throw new NotFoundExcepiton("博客不存在");
-        //}
-        //System.out.println("index执行——————————————————");
         System.out.println(session.getId());
         return "index";
     }

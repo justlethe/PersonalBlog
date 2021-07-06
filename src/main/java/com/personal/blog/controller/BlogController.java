@@ -14,6 +14,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.personal.blog.entity.Blog;
+import com.personal.blog.entity.Blog;
 import com.personal.blog.entity.Msg;
 import com.personal.blog.mapper.BlogMapper;
 import net.sf.json.JSONArray;
@@ -58,6 +59,7 @@ public class BlogController {
 
         List<Blog> blogs = new ArrayList<>();
         QueryWrapper<Blog> wrapper = new QueryWrapper<>();
+        wrapper.orderByDesc("recommend");
 
         if (!search.equals("")){
             System.out.println(search);
@@ -148,11 +150,12 @@ public class BlogController {
         JSONObject blogData = JSONObject.fromObject(request.getParameter("blogData"));
         Integer publish = Integer.parseInt((request.getParameter("published")));
         String updateFlag = request.getParameter("updateFlag");
+        Integer blogId = Integer.parseInt((request.getParameter("blogId")));
         System.out.println("\n\n\n"+updateFlag+"\n\n\n");
 
         // 检查标题是否重复
         QueryWrapper<Blog> wrapper = new QueryWrapper<>();
-        wrapper.eq("title",blogData.getString("title"));
+        wrapper.eq("id",blogId);
 
         Blog blog = new Blog();
         blog.setTitle(blogData.getString("title"));

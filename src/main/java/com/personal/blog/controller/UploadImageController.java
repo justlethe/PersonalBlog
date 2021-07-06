@@ -66,7 +66,7 @@ public class UploadImageController {
             object.put("success", 1);
             object.put("message", "上传成功");
             object.put("url", request.getScheme() + "://" + request.getServerName()
-                    + ":" + request.getServerPort() + fileName);
+                    + "/blog/" + fileName);
         } catch (Exception e) {
 
             object.put("success", 0);
